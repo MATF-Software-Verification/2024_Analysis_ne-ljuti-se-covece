@@ -1,0 +1,39 @@
+../ne-ljuti-se-covece/src/common/message.cpp:65:21: warning: Member variable 'CreateGameResponse::color' is not initialized in the constructor. [uninitMemberVar]
+CreateGameResponse::CreateGameResponse(QString errorMessage)
+                    ^
+../ne-ljuti-se-covece/src/common/message.cpp:72:21: warning: Member variable 'Response::broadcast' is not initialized in the constructor. Maybe it should be initialized directly in the class Response? [uninitDerivedMemberVar]
+CreateGameResponse::CreateGameResponse(const QJsonObject &json)
+                    ^
+../ne-ljuti-se-covece/src/common/message.cpp:141:19: warning: Member variable 'Response::broadcast' is not initialized in the constructor. Maybe it should be initialized directly in the class Response? [uninitDerivedMemberVar]
+JoinGameResponse::JoinGameResponse(const QJsonObject &json)
+                  ^
+../ne-ljuti-se-covece/src/common/message.cpp:380:19: warning: Member variable 'Response::broadcast' is not initialized in the constructor. Maybe it should be initialized directly in the class Response? [uninitDerivedMemberVar]
+RollDiceResponse::RollDiceResponse(const QJsonObject &json)
+                  ^
+../ne-ljuti-se-covece/src/common/message.cpp:428:18: warning: Member variable 'Response::broadcast' is not initialized in the constructor. Maybe it should be initialized directly in the class Response? [uninitDerivedMemberVar]
+EndGameResponse::EndGameResponse(const QJsonObject &json)
+                 ^
+../ne-ljuti-se-covece/src/common/message.cpp:494:19: warning: Member variable 'Response::broadcast' is not initialized in the constructor. Maybe it should be initialized directly in the class Response? [uninitDerivedMemberVar]
+MovePawnResponse::MovePawnResponse(const QJsonObject &json)
+                  ^
+../ne-ljuti-se-covece/src/common/message.cpp:613:24: warning: Member variable 'ActivateMagicResponse::remainingMagicNumber' is not initialized in the constructor. [uninitMemberVar]
+ActivateMagicResponse::ActivateMagicResponse(Color color, QString errorMessage)
+                       ^
+../ne-ljuti-se-covece/src/common/message.cpp:613:24: warning: Member variable 'ActivateMagicResponse::newDiceNumber' is not initialized in the constructor. [uninitMemberVar]
+ActivateMagicResponse::ActivateMagicResponse(Color color, QString errorMessage)
+                       ^
+../ne-ljuti-se-covece/src/common/turncontext.cpp:3:14: warning: Member variable 'TurnContext::currentPlayerColor' is not initialized in the constructor. [uninitMemberVar]
+TurnContext::TurnContext(QObject *parent)
+             ^
+../ne-ljuti-se-covece/src/server/participants.cpp:7:18: warning: Member variable 'BaseParticipant::gameManager' is not initialized in the constructor. [uninitMemberVar]
+BaseParticipant::BaseParticipant(QObject *parent):
+                 ^
+../ne-ljuti-se-covece/src/server/participants.cpp:7:18: warning: Member variable 'BaseParticipant::color' is not initialized in the constructor. [uninitMemberVar]
+BaseParticipant::BaseParticipant(QObject *parent):
+                 ^
+../ne-ljuti-se-covece/src/server/participants.cpp:28:26: warning: Member variable 'ServerThreadParticipant::socket' is not initialized in the constructor. [uninitMemberVar]
+ServerThreadParticipant::ServerThreadParticipant(int id, QObject *parent):
+                         ^
+../ne-ljuti-se-covece/src/game/client/client.cpp:13:9: warning: Member variable 'Client::color' is not initialized in the constructor. [uninitMemberVarPrivate]
+Client::Client(QObject *parent) :
+        ^

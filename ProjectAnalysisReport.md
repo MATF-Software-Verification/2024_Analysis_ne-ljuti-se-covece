@@ -209,3 +209,74 @@ These findings are treated as potential leaks rather than confirmed defects beca
 ### Conclusion
 
 Clang-Tidy found four project-specific warnings. The strongest finding is a possible null pointer dereference in `src/game/client/handlers.cpp`. Three additional warnings indicate possible memory leaks associated with dynamically allocated `QWidget` objects.
+
+---
+
+## Cppcheck
+
+### Tool
+
+Cppcheck was used for static analysis with focus on warnings, portability and performance issues.
+
+The analysis was run over:
+
+```text
+src/common
+src/server
+src/game
+```
+
+The analysis can be reproduced using:
+
+```bash
+cd cppcheck
+./run_cppcheck.sh
+```
+
+### Running the analysis
+
+![Running Cppcheck](cppcheck/pictures/run_cppcheck.png)
+
+### Uninitialized members
+
+Cppcheck reported multiple uninitialized member variables, including:
+
+```text
+CreateGameResponse::color
+Response::broadcast
+ActivateMagicResponse::remainingMagicNumber
+ActivateMagicResponse::newDiceNumber
+BaseParticipant::gameManager
+BaseParticipant::color
+ServerThreadParticipant::socket
+Client::color
+```
+
+These warnings indicate that some objects may be created with partially uninitialized state.
+
+![Uninitialized members reported by Cppcheck](cppcheck/pictures/uninitialized_members.png)
+
+### TurnContext::currentPlayerColor
+
+Cppcheck also reported:
+
+```text
+src/common/turncontext.cpp:3:14:
+warning: Member variable 'TurnContext::currentPlayerColor'
+is not initialized in the constructor. [uninitMemberVar]
+```
+
+![TurnContext warning](cppcheck/pictures/turncontext_warning.png)
+
+This finding is particularly important because Valgrind Memcheck independently reported runtime use of an uninitialized value originating from the same `TurnContext` object.
+
+The two analyses therefore support the same conclusion from different perspectives:
+
+- Cppcheck identifies the missing initialization statically.
+- Valgrind observes the consequences of uninitialized state during execution.
+
+### Conclusion
+
+Cppcheck detected several project-specific cases of uninitialized member variables.
+
+The strongest finding is `TurnContext::currentPlayerColor`, because it confirms the same defect already observed with Valgrind Memcheck. Additional warnings identify other members that should be manually inspected or covered by further tests.
