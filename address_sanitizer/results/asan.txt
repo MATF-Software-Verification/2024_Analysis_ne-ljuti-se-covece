@@ -1,0 +1,71 @@
+Starting CreateGameMessageHandler..
+Server started! Listening...
+Starting CreateGameMessageHandler..
+Starting CreateGameMessageHandler..
+Starting CreateGameMessageHandler..
+Player is ready
+Player is ready
+Starting CreateGameMessageHandler..
+Player is ready
+Player is ready
+Player is ready
+Starting CreateGameMessageHandler..
+Starting JoinGameMessageHandler..
+Starting JoinGameMessageHandler..
+Starting JoinGameMessageHandler..
+Starting JoinGameMessageHandler..
+Starting JoinGameMessageHandler..
+Starting PlayerReadyMessageHandler..
+Player is ready
+Starting PlayerReadyMessageHandler..
+Player is ready
+Starting PlayerReadyMessageHandler..
+Ne moze da bude ready ako je vec ready
+Starting StartGameMessageHandler..
+Starting StartGameMessageHandler..
+Starting StartGameMessageHandler..
+Starting StartGameMessageHandler..
+Nisu svi igraci spremni.  Red:  false  Green:  false  Yellow:  true
+Starting EndTurnMessageHandler..
+Starting EndTurnMessageHandler..
+Starting EndTurnMessageHandler..
+Starting EndTurnMessageHandler..
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test is a Catch v2.13.7 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+ActivateMagicMessageHandlerTest
+  ActivateMagicMessageHandlerTest: Valid ActivateMagicMessage Handling
+-------------------------------------------------------------------------------
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/server/handlers/ActivateMagicMessageHandlerTest.cpp:11
+...............................................................................
+
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/server/handlers/ActivateMagicMessageHandlerTest.cpp:26: FAILED:
+  REQUIRE( moveResponse->getErrorMessage() == "" )
+with expansion:
+  { {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?},
+  {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?},
+  {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?},
+  {?}, {?} }
+  ==
+  ""
+
+ASSERT failure in QList::at: "index out of range", file /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h, line 423
+-------------------------------------------------------------------------------
+ActivateMagicMessageHandlerTest
+  ActivateMagicMessageHandlerTest: Invalid ActivateMagicMessage Handling, no
+                                   magic
+-------------------------------------------------------------------------------
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/server/handlers/ActivateMagicMessageHandlerTest.cpp:47
+...............................................................................
+
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/server/handlers/ActivateMagicMessageHandlerTest.cpp:47: FAILED:
+due to a fatal error condition:
+  SIGABRT - Abort (abnormal termination) signal
+
+===============================================================================
+test cases:  14 |  13 passed | 1 failed
+assertions: 266 | 264 passed | 2 failed
+

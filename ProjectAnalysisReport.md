@@ -98,28 +98,13 @@ GameManager::isMagicAvailable() - managers.cpp:70
 Board::getPlayer() - board.cpp:207
 ```
 
-`TurnContext::reset()` initializes:
-
-```text
-remainingNumberOfMoves
-remainingNumberOfRolles
-lastRolledValue
-numberOfMagics
-```
-
-but does not initialize:
+`TurnContext::reset()` initializes several state fields, but does not initialize:
 
 ```cpp
 currentPlayerColor
 ```
 
-The value is later returned by `getCurrentPlayerColor()` and is ultimately used in:
-
-```cpp
-return this->players[color];
-```
-
-inside `Board::getPlayer()`.
+The value is later returned by `getCurrentPlayerColor()` and is ultimately used in player indexing.
 
 ![Uninitialized value reported by Memcheck](valgrind/pictures/uninitialized_value.png)
 
@@ -133,7 +118,7 @@ Valgrind also reported invalid reads and memory leaks in Qt/Wayland/GTK-related 
 
 ### Conclusion
 
-Valgrind Memcheck detected a project-specific use of an uninitialized value. The field `TurnContext::currentPlayerColor` is not initialized by the constructor or by `TurnContext::reset()`, but it is later used by the game logic.
+Valgrind Memcheck detected a project-specific use of an uninitialized value. The field `TurnContext::currentPlayerColor` is not initialized before being used by game logic.
 
 ---
 
@@ -181,7 +166,7 @@ The warning refers to:
 response->prepareMessage()
 ```
 
-The analyzer determined that the execution path can reach this expression while `response` is null. Dereferencing a null pointer may cause the application to crash.
+The analyzer determined that the execution path can reach this expression while `response` is null.
 
 ![Null pointer warning](clang_tidy/pictures/null_pointer_warning.png)
 
@@ -195,20 +180,13 @@ handlers.cpp:103
 handlers.cpp:130
 ```
 
-The warnings are related to dynamically allocated `QWidget` objects passed to `QMessageBox` calls, for example:
-
-```cpp
-QMessageBox::information(new QWidget(), ...);
-QMessageBox::critical(new QWidget(), ...);
-```
-
-These findings are treated as potential leaks rather than confirmed defects because Qt object ownership and lifetime would require additional analysis.
+The warnings are related to dynamically allocated `QWidget` objects passed to `QMessageBox` calls.
 
 ![Potential memory leak warnings](clang_tidy/pictures/memory_leaks.png)
 
 ### Conclusion
 
-Clang-Tidy found four project-specific warnings. The strongest finding is a possible null pointer dereference in `src/game/client/handlers.cpp`. Three additional warnings indicate possible memory leaks associated with dynamically allocated `QWidget` objects.
+Clang-Tidy found four project-specific warnings. The strongest finding is a possible null pointer dereference in `src/game/client/handlers.cpp`.
 
 ---
 
@@ -252,8 +230,6 @@ ServerThreadParticipant::socket
 Client::color
 ```
 
-These warnings indicate that some objects may be created with partially uninitialized state.
-
 ![Uninitialized members reported by Cppcheck](cppcheck/pictures/uninitialized_members.png)
 
 ### TurnContext::currentPlayerColor
@@ -270,13 +246,118 @@ is not initialized in the constructor. [uninitMemberVar]
 
 This finding is particularly important because Valgrind Memcheck independently reported runtime use of an uninitialized value originating from the same `TurnContext` object.
 
-The two analyses therefore support the same conclusion from different perspectives:
-
-- Cppcheck identifies the missing initialization statically.
-- Valgrind observes the consequences of uninitialized state during execution.
-
 ### Conclusion
 
 Cppcheck detected several project-specific cases of uninitialized member variables.
 
-The strongest finding is `TurnContext::currentPlayerColor`, because it confirms the same defect already observed with Valgrind Memcheck. Additional warnings identify other members that should be manually inspected or covered by further tests.
+The strongest finding is `TurnContext::currentPlayerColor`, because it confirms the same defect already observed with Valgrind Memcheck.
+
+---
+
+## AddressSanitizer
+
+### Tool
+
+AddressSanitizer was used for dynamic memory analysis.
+
+The project was compiled with:
+
+```text
+-fsanitize=address
+-fno-omit-frame-pointer
+```
+
+Leak detection was enabled using:
+
+```text
+ASAN_OPTIONS=detect_leaks=1
+```
+
+The analysis can be reproduced using:
+
+```bash
+cd address_sanitizer
+./run_asan.sh
+```
+
+### Running the analysis
+
+![Running AddressSanitizer](address_sanitizer/pictures/run_asan.png)
+
+### Full test suite behavior
+
+The complete test suite did not finish under ASan.
+
+Execution aborted in `ActivateMagicMessageHandlerTest` after Qt reported:
+
+```text
+ASSERT failure in QList::at: "index out of range"
+```
+
+The test process then terminated with `SIGABRT`.
+
+Because the process aborted before the final leak report, the leak analysis was repeated while excluding:
+
+```text
+ActivateMagicMessageHandlerTest
+```
+
+using the Catch2 filter:
+
+```text
+~ActivateMagicMessageHandlerTest
+```
+
+### LeakSanitizer summary
+
+The filtered run produced:
+
+```text
+ERROR: LeakSanitizer: detected memory leaks
+SUMMARY: AddressSanitizer: 198924 byte(s) leaked in 2953 allocation(s).
+```
+
+![LeakSanitizer summary](address_sanitizer/pictures/leak_summary.png)
+
+### Direct leak interpretation
+
+The inspected direct leak traces were located in external Qt/Wayland components such as:
+
+```text
+libwayland-client
+Qt6WaylandClient
+Qt6Gui
+Qt6Widgets
+```
+
+These direct leaks were therefore not attributed directly to the analyzed project.
+
+### Indirect leak traces through project code
+
+Some indirect leak traces passed through:
+
+```text
+Square::Square(QString, QObject*)       src/server/square.cpp:4
+Board::initializeTable()                src/server/board.cpp:243
+Board::Board(int, QObject*)             src/server/board.cpp:5
+```
+
+![Indirect leak trace through project code](address_sanitizer/pictures/indirect_project_trace.png)
+
+These traces show that project objects are part of the retained allocation graph.
+
+However, because the findings are indirect leaks, they do not by themselves prove that `Square` or `Board` are the root cause of the leak.
+
+### Conclusion
+
+AddressSanitizer and LeakSanitizer reported:
+
+```text
+198924 byte(s) leaked in 2953 allocation(s)
+```
+
+The direct leak traces that were inspected belonged to Qt/Wayland infrastructure and were not attributed directly to the project.
+
+Indirect leak traces did pass through `Square` and `Board`, but additional ownership and lifetime analysis would be required to identify the exact root cause.
+
+The full test suite also aborted due to an out-of-range `QList::at` assertion in `ActivateMagicMessageHandlerTest`, consistent with the previously observed unstable player-index state.
