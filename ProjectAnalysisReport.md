@@ -1,10 +1,12 @@
 # Project Analysis Report
 
-## Unit testing and code coverage
+## Existing tests and code coverage
 
 ### Tool/technique
 
-The analyzed project contains an existing Catch2 test suite. The tests were executed and code coverage was measured using LCOV.
+The analyzed project contains an existing Catch2 test suite. The existing tests were executed and code coverage was measured using LCOV.
+
+This section is used as supporting analysis and baseline information. LCOV is not counted as a separate verification technique.
 
 ### Procedure
 
@@ -35,8 +37,6 @@ All existing tests passed successfully:
 
 ### Code coverage results
 
-The resulting code coverage was:
-
 - Line coverage: 73.2% (868/1185)
 - Function coverage: 80.6% (179/222)
 - Branch coverage: not collected
@@ -45,7 +45,7 @@ The resulting code coverage was:
 
 ### Conclusion
 
-The existing test suite provides good function coverage and moderate line coverage. Approximately 27% of the source lines are not executed by the current test suite, which indicates that additional edge cases and less frequently executed code paths could be covered by further testing.
+The existing test suite provides good function coverage and moderate line coverage. Approximately 27% of the source lines are not executed by the current test suite.
 
 ---
 
@@ -54,8 +54,6 @@ The existing test suite provides good function coverage and moderate line covera
 ### Tool
 
 Valgrind Memcheck was used to detect memory-related problems such as use of uninitialized values, invalid memory access and memory leaks.
-
-The analysis was performed on the existing Catch2 test executable.
 
 The analysis can be reproduced using:
 
@@ -70,9 +68,9 @@ cd valgrind
 
 ### Test behavior under Memcheck
 
-When the test suite was executed normally, all 15 test cases and all 303 assertions passed.
+Under normal execution, all 15 test cases and all 303 assertions passed.
 
-Under Valgrind Memcheck, the result changed to:
+Under Valgrind Memcheck:
 
 - 15 test cases
 - 14 passed
@@ -81,7 +79,7 @@ Under Valgrind Memcheck, the result changed to:
 - 301 passed
 - 2 failed
 
-The failing assertions were located in `ActivateMagicMessageHandlerTest`.
+The failing assertions were in `ActivateMagicMessageHandlerTest`.
 
 ![Failing test under Valgrind](valgrind/pictures/failed_test.png)
 
@@ -93,20 +91,14 @@ Valgrind reported that conditional control flow depends on an uninitialized valu
 ActivateMagicMessageHandler::handleMessage() - handlers.cpp:273
 ```
 
-The same uninitialized value was later used through:
+The same value was later used through:
 
 ```text
 GameManager::isMagicAvailable() - managers.cpp:70
 Board::getPlayer() - board.cpp:207
 ```
 
-The `TurnContext` constructor calls:
-
-```cpp
-this->reset();
-```
-
-However, `TurnContext::reset()` initializes:
+`TurnContext::reset()` initializes:
 
 ```text
 remainingNumberOfMoves
@@ -121,13 +113,7 @@ but does not initialize:
 currentPlayerColor
 ```
 
-The value is later returned by:
-
-```cpp
-getCurrentPlayerColor()
-```
-
-and is ultimately used in:
+The value is later returned by `getCurrentPlayerColor()` and is ultimately used in:
 
 ```cpp
 return this->players[color];
@@ -139,9 +125,7 @@ inside `Board::getPlayer()`.
 
 ### Other Valgrind findings
 
-Valgrind also reported invalid reads and memory leaks in Qt/Wayland/GTK-related code.
-
-Those findings were not attributed directly to the analyzed project because their stack traces were located in external platform and GUI libraries.
+Valgrind also reported invalid reads and memory leaks in Qt/Wayland/GTK-related code. These were not attributed directly to the analyzed project because their stack traces were located in external libraries.
 
 ### Memcheck summary
 
@@ -149,8 +133,79 @@ Those findings were not attributed directly to the analyzed project because thei
 
 ### Conclusion
 
-Valgrind Memcheck detected a project-specific use of an uninitialized value.
+Valgrind Memcheck detected a project-specific use of an uninitialized value. The field `TurnContext::currentPlayerColor` is not initialized by the constructor or by `TurnContext::reset()`, but it is later used by the game logic.
 
-The field `TurnContext::currentPlayerColor` is not initialized by the constructor or by `TurnContext::reset()`, but it is later used by the game logic. This affects control flow and is eventually used as an index in `Board::getPlayer()`.
+---
 
-The changed behavior of `ActivateMagicMessageHandlerTest` under Valgrind is consistent with the presence of uninitialized state and makes this finding particularly relevant for the analysis.
+## Clang-Tidy
+
+### Tool
+
+Clang-Tidy was used for static analysis of the C++ source code in:
+
+```text
+src/common
+src/server
+src/game
+```
+
+The analysis can be reproduced using:
+
+```bash
+cd clang_tidy
+./run_clang_tidy.sh
+```
+
+### Running the analysis
+
+![Running Clang-Tidy](clang_tidy/pictures/run_clang_tidy.png)
+
+### Null pointer warning
+
+The most important finding was reported in:
+
+```text
+src/game/client/handlers.cpp:50
+```
+
+Clang-Tidy reported:
+
+```text
+Called C++ object pointer is null
+[clang-analyzer-core.CallAndMessage]
+```
+
+The warning refers to:
+
+```cpp
+response->prepareMessage()
+```
+
+The analyzer determined that the execution path can reach this expression while `response` is null. Dereferencing a null pointer may cause the application to crash.
+
+![Null pointer warning](clang_tidy/pictures/null_pointer_warning.png)
+
+### Potential memory leaks
+
+Clang-Tidy also reported three potential memory leaks:
+
+```text
+handlers.cpp:76
+handlers.cpp:103
+handlers.cpp:130
+```
+
+The warnings are related to dynamically allocated `QWidget` objects passed to `QMessageBox` calls, for example:
+
+```cpp
+QMessageBox::information(new QWidget(), ...);
+QMessageBox::critical(new QWidget(), ...);
+```
+
+These findings are treated as potential leaks rather than confirmed defects because Qt object ownership and lifetime would require additional analysis.
+
+![Potential memory leak warnings](clang_tidy/pictures/memory_leaks.png)
+
+### Conclusion
+
+Clang-Tidy found four project-specific warnings. The strongest finding is a possible null pointer dereference in `src/game/client/handlers.cpp`. Three additional warnings indicate possible memory leaks associated with dynamically allocated `QWidget` objects.

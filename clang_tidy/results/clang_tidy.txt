@@ -1,0 +1,114 @@
+[1/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/common/turncontext.cpp.
+[2/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/common/message.cpp.
+[3/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/common/messagefactory.cpp.
+[4/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/server/participants.cpp.
+[5/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/server/participants.cpp.
+[6/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/server/main.cpp.
+[7/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/server/handlers.cpp.
+[8/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/server/handlers.cpp.
+[9/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/server/pawn.cpp.
+[10/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/server/pawn.cpp.
+[11/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/server/player.cpp.
+[12/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/server/player.cpp.
+[13/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/server/server.cpp.
+[14/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/server/server.cpp.
+[15/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/server/square.cpp.
+[16/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/server/square.cpp.
+[17/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/server/managers.cpp.
+[18/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/server/managers.cpp.
+[19/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/server/board.cpp.
+[20/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/server/board.cpp.
+[21/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/game/client/client.cpp.
+[22/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/game/client/handlers.cpp.
+5 warnings generated.
+[23/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/game/client/clientmanagers.cpp.
+5 warnings generated.
+[24/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/game/main.cpp.
+5 warnings generated.
+[25/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/game/view/endgame.cpp.
+5 warnings generated.
+[26/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/game/view/mainwindow.cpp.
+5 warnings generated.
+[27/19] Processing file /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/clang_tidy/../ne-ljuti-se-covece/src/game/view/maingame.cpp.
+5 warnings generated.
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:50:109: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+   50 |     QMessageBox::critical(new QWidget(), "Internal server error", "Server returned unexpected response: " + response->prepareMessage());
+      |                                                                                                             ^~~~~~~~
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:37:9: note: Assuming 'cgr' is null
+   37 |     if (cgr)
+      |         ^~~
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:37:5: note: Taking false branch
+   37 |     if (cgr)
+      |     ^
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:50:109: note: Called C++ object pointer is null
+   50 |     QMessageBox::critical(new QWidget(), "Internal server error", "Server returned unexpected response: " + response->prepareMessage());
+      |                                                                                                             ^~~~~~~~
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:76:9: warning: Potential memory leak [clang-analyzer-cplusplus.NewDeleteLeaks]
+   76 |         return;
+      |         ^
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:58:9: note: Assuming 'jgr' is non-null
+   58 |     if (jgr)
+      |         ^~~
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:58:5: note: Taking true branch
+   58 |     if (jgr)
+      |     ^
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:62:12: note: Assuming the condition is true
+   62 |         if(jgr->getJoined())
+      |            ^~~~~~~~~~~~~~~~
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:62:9: note: Taking true branch
+   62 |         if(jgr->getJoined())
+      |         ^
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:65:17: note: Assuming the condition is true
+   65 |             if (!Client::getInstance()->getBackgroundThreadStarted()){
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:65:13: note: Taking true branch
+   65 |             if (!Client::getInstance()->getBackgroundThreadStarted()){
+      |             ^
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:69:42: note: Memory is allocated
+   69 |                 QMessageBox::information(new QWidget(), "Join Game Response", "Uspesno si se pridruzio igri!");
+      |                                          ^~~~~~~~~~~~~
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:76:9: note: Potential memory leak
+   76 |         return;
+      |         ^
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:103:9: warning: Potential memory leak [clang-analyzer-cplusplus.NewDeleteLeaks]
+  103 |         return;
+      |         ^
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:89:8: note: Assuming 'prr' is non-null
+   89 |     if(prr)
+      |        ^~~
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:89:5: note: Taking true branch
+   89 |     if(prr)
+      |     ^
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:92:13: note: Assuming the condition is false
+   92 |         if (prr->getSuccess())
+      |             ^~~~~~~~~~~~~~~~~
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:92:9: note: Taking false branch
+   92 |         if (prr->getSuccess())
+      |         ^
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:101:35: note: Memory is allocated
+  101 |             QMessageBox::critical(new QWidget(), "Error", prr->getErrorMessage());
+      |                                   ^~~~~~~~~~~~~
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:103:9: note: Potential memory leak
+  103 |         return;
+      |         ^
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:130:9: warning: Potential memory leak [clang-analyzer-cplusplus.NewDeleteLeaks]
+  130 |         return;
+      |         ^
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:115:9: note: Assuming 'sgr' is non-null
+  115 |     if (sgr)
+      |         ^~~
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:115:5: note: Taking true branch
+  115 |     if (sgr)
+      |     ^
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:119:12: note: Assuming the condition is false
+  119 |         if(sgr->getSuccess())
+      |            ^~~~~~~~~~~~~~~~~
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:119:9: note: Taking false branch
+  119 |         if(sgr->getSuccess())
+      |         ^
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:127:38: note: Memory is allocated
+  127 |             QMessageBox::information(new QWidget(), "Start game response!", sgr->getErrorMessage());
+      |                                      ^~~~~~~~~~~~~
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:130:9: note: Potential memory leak
+  130 |         return;
+      |         ^
