@@ -435,3 +435,101 @@ The `cov` and `ft` values show that the fuzzer explored multiple code paths, whi
 libFuzzer successfully exercised `MessageFactory::createMessage()` with 488435 generated inputs.
 
 No crash, buffer overflow, use-after-free or other AddressSanitizer-detected memory error was found during the final run. The parser tolerated a large amount of malformed input during the observed execution window.
+
+---
+
+## UndefinedBehaviorSanitizer
+
+### Tool
+
+UndefinedBehaviorSanitizer (UBSan) was used to detect undefined behavior during runtime execution of the existing Catch2 tests.
+
+The project was compiled with:
+
+```text
+-fsanitize=undefined
+-fno-omit-frame-pointer
+```
+
+Stack traces were enabled with:
+
+```text
+UBSAN_OPTIONS=print_stacktrace=1
+```
+
+The analysis can be reproduced using:
+
+```bash
+cd undefined_behavior_sanitizer
+./run_ubsan.sh
+```
+
+### Running the analysis
+
+![Running UndefinedBehaviorSanitizer](undefined_behavior_sanitizer/pictures/run_ubsan.png)
+
+### Invalid enum value in CreateGameResponse
+
+UBSan reported:
+
+```text
+src/common/message.cpp:95:27:
+runtime error: load of value 836436083, which is not a valid value for type 'Color'
+```
+
+The affected statement is:
+
+```cpp
+json["color"] = this->color;
+```
+
+![Invalid Color value in CreateGameResponse](undefined_behavior_sanitizer/pictures/invalid_color_message.png)
+
+Cppcheck had previously reported that `CreateGameResponse::color` is not initialized in one constructor.
+
+The UBSan result therefore shows the runtime consequence of the missing initialization: the program loads a value that is not a valid member of the `Color` enum.
+
+### Invalid enum value in BaseParticipant
+
+UBSan also reported:
+
+```text
+src/server/handlers.cpp:106:98:
+runtime error: load of value 1936281120, which is not a valid value for type 'Color'
+```
+
+The affected code is:
+
+```cpp
+return new PlayerReadyResponse(
+    participant->color,
+    false,
+    "Niste povezani u partiju!"
+);
+```
+
+![Invalid Color value in BaseParticipant](undefined_behavior_sanitizer/pictures/invalid_color_participant.png)
+
+Cppcheck had previously reported that `BaseParticipant::color` is not initialized in its constructor.
+
+### Correlation with Cppcheck
+
+The two tools independently support the same conclusion:
+
+```text
+Cppcheck:
+- CreateGameResponse::color is not initialized
+- BaseParticipant::color is not initialized
+
+UBSan:
+- message.cpp:95 loads an invalid Color value
+- handlers.cpp:106 loads an invalid Color value
+```
+
+Cppcheck identifies the missing initialization statically, while UBSan observes the invalid enum values during runtime execution.
+
+### Conclusion
+
+UndefinedBehaviorSanitizer detected two project-specific runtime errors involving invalid `Color` enum values.
+
+Both errors correlate with members previously reported as uninitialized by Cppcheck. This strengthens the conclusion that the missing initialization represents real defects in the analyzed project.

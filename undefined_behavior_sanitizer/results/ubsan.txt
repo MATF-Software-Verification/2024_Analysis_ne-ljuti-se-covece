@@ -1,0 +1,69 @@
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/common/message.cpp:95:27: runtime error: load of value 2186690847, which is not a valid value for type 'Color'
+    #0 0x7dc8ad8d46a9 in CreateGameResponse::toJson() /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/common/message.cpp:95
+    #1 0x5d76805b1710 in ____C_A_T_C_H____T_E_S_T____0 /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/messageCreateGameTest.cpp:63
+    #2 0x5d768032c15c in Catch::TestInvokerAsFunction::invoke() const /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/catch.hpp:14321
+    #3 0x5d76803280c8 in Catch::TestCase::invoke() const /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/catch.hpp:14160
+    #4 0x5d768030e476 in Catch::RunContext::invokeActiveTestCase() /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/catch.hpp:13020
+    #5 0x5d768030d0d3 in Catch::RunContext::runCurrentTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/catch.hpp:12993
+    #6 0x5d7680304572 in Catch::RunContext::runTest(Catch::TestCase const&) /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/catch.hpp:12754
+    #7 0x5d7680316572 in execute /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/catch.hpp:13347
+    #8 0x5d768031cde9 in Catch::Session::runInternal() /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/catch.hpp:13553
+    #9 0x5d768031b93c in Catch::Session::run() /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/catch.hpp:13509
+    #10 0x5d768041f4e4 in int Catch::Session::run<char>(int, char const* const*) (/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/build-ubsan/src/test/test+0x4b84e4) (BuildId: d42272f44ac3d4a2de10b8b972317427a1795175)
+    #11 0x5d7680377735 in main /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/main.cpp:9
+    #12 0x7dc8ab02a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #13 0x7dc8ab02a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #14 0x5d76802b6044 in _start (/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/build-ubsan/src/test/test+0x34f044) (BuildId: d42272f44ac3d4a2de10b8b972317427a1795175)
+
+Starting CreateGameMessageHandler..
+Server started! Listening...
+Starting CreateGameMessageHandler..
+Starting CreateGameMessageHandler..
+Starting CreateGameMessageHandler..
+Player is ready
+Player is ready
+Starting CreateGameMessageHandler..
+Player is ready
+Player is ready
+Player is ready
+Starting CreateGameMessageHandler..
+Starting JoinGameMessageHandler..
+Starting JoinGameMessageHandler..
+Starting JoinGameMessageHandler..
+Starting JoinGameMessageHandler..
+Starting JoinGameMessageHandler..
+Starting PlayerReadyMessageHandler..
+Player is ready
+/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/server/handlers.cpp:106:98: runtime error: load of value 1936281120, which is not a valid value for type 'Color'
+    #0 0x5d768067b9c4 in PlayerReadyMessageHandler::handleMessage(Message*, BaseParticipant*) /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/server/handlers.cpp:106
+    #1 0x5d76805f8059 in ____C_A_T_C_H____T_E_S_T____0 /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/server/handlers/playerReadyMessageHandlerTest.cpp:36
+    #2 0x5d768032c15c in Catch::TestInvokerAsFunction::invoke() const /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/catch.hpp:14321
+    #3 0x5d76803280c8 in Catch::TestCase::invoke() const /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/catch.hpp:14160
+    #4 0x5d768030e476 in Catch::RunContext::invokeActiveTestCase() /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/catch.hpp:13020
+    #5 0x5d768030d0d3 in Catch::RunContext::runCurrentTest(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/catch.hpp:12993
+    #6 0x5d7680304572 in Catch::RunContext::runTest(Catch::TestCase const&) /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/catch.hpp:12754
+    #7 0x5d7680316572 in execute /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/catch.hpp:13347
+    #8 0x5d768031cde9 in Catch::Session::runInternal() /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/catch.hpp:13553
+    #9 0x5d768031b93c in Catch::Session::run() /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/catch.hpp:13509
+    #10 0x5d768041f4e4 in int Catch::Session::run<char>(int, char const* const*) (/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/build-ubsan/src/test/test+0x4b84e4) (BuildId: d42272f44ac3d4a2de10b8b972317427a1795175)
+    #11 0x5d7680377735 in main /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/test/main.cpp:9
+    #12 0x7dc8ab02a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #13 0x7dc8ab02a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #14 0x5d76802b6044 in _start (/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/build-ubsan/src/test/test+0x34f044) (BuildId: d42272f44ac3d4a2de10b8b972317427a1795175)
+
+Starting PlayerReadyMessageHandler..
+Player is ready
+Starting PlayerReadyMessageHandler..
+Ne moze da bude ready ako je vec ready
+Starting StartGameMessageHandler..
+Starting StartGameMessageHandler..
+Starting StartGameMessageHandler..
+Starting StartGameMessageHandler..
+Nisu svi igraci spremni.  Red:  false  Green:  false  Yellow:  true
+Starting EndTurnMessageHandler..
+Starting EndTurnMessageHandler..
+Starting EndTurnMessageHandler..
+Starting EndTurnMessageHandler..
+===============================================================================
+All tests passed (303 assertions in 15 test cases)
+
