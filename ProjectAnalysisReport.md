@@ -22,11 +22,27 @@ The script creates a dedicated Debug build and runs the test executable using:
 --track-origins=yes
 ```
 
-The complete output is stored in `valgrind/results/memcheck.txt`.
+The complete output is stored in:
 
-### Main finding
+```text
+valgrind/results/memcheck.txt
+```
 
-Valgrind reported use of uninitialized values in the execution path involving:
+### Test behavior under Memcheck
+
+Under normal execution, the existing Catch2 tests passed successfully.
+
+Under Memcheck, `ActivateMagicMessageHandlerTest` exhibited unstable behavior and failed, while Valgrind reported use of uninitialized values.
+
+### Project-specific finding
+
+An important report was:
+
+```text
+Conditional jump or move depends on uninitialised value(s)
+```
+
+The stack trace included:
 
 ```text
 ActivateMagicMessageHandler::handleMessage()
@@ -34,13 +50,36 @@ GameManager::isMagicAvailable()
 Board::getPlayer()
 ```
 
-Inspection of the source code showed that `TurnContext::currentPlayerColor` is not initialized in `TurnContext::reset()`, although the other state fields are initialized. The value later participates in player-selection logic.
+Additional reports showed:
 
-Memcheck also reported multiple leak categories. A significant portion of the traces went through Qt, Wayland, GTK and other system libraries, so those reports were not automatically attributed to the analyzed project.
+```text
+Use of uninitialised value of size 8
+```
+
+in `Board::getPlayer(Color)`.
+
+Inspection of the source code showed that `TurnContext::currentPlayerColor` is not initialized in `TurnContext::reset()`, although the other state fields are initialized.
+
+This value later participates in logic that determines the current player.
+
+### Leak analysis
+
+Memcheck also reported memory leaks in multiple categories:
+
+```text
+definitely lost
+indirectly lost
+possibly lost
+still reachable
+```
+
+A significant number of leak records passed through Qt, Wayland, GTK and other system libraries. Those records were not automatically attributed to the analyzed project.
+
+The strongest project-specific Valgrind result is therefore the use of an uninitialized value.
 
 ### Conclusion
 
-The strongest project-specific Valgrind finding is runtime use of an uninitialized value related to `TurnContext::currentPlayerColor`.
+Valgrind Memcheck detected runtime use of an uninitialized value related to `TurnContext::currentPlayerColor`. The finding is relevant because the uninitialized value propagates into player-selection logic and affects runtime behavior.
 
 ---
 
@@ -48,7 +87,13 @@ The strongest project-specific Valgrind finding is runtime use of an uninitializ
 
 ### Tool
 
-Clang-Tidy was used for static analysis of the C++ source code in `src/common`, `src/server` and `src/game`.
+Clang-Tidy was used for static analysis of the C++ source code in:
+
+```text
+src/common
+src/server
+src/game
+```
 
 The analysis can be reproduced using:
 
@@ -57,11 +102,29 @@ cd clang_tidy
 ./run_clang_tidy.sh
 ```
 
-The project is configured with `CMAKE_EXPORT_COMPILE_COMMANDS=ON` so that Clang-Tidy can use `compile_commands.json`.
+The project is configured with:
 
-### Findings
+```text
+CMAKE_EXPORT_COMPILE_COMMANDS=ON
+```
 
-The most important warning was reported in `src/game/client/handlers.cpp:50`:
+so that Clang-Tidy can use the generated `compile_commands.json` database.
+
+The complete result is stored in:
+
+```text
+clang_tidy/results/clang_tidy.txt
+```
+
+### Null pointer warning
+
+The most important finding was reported in:
+
+```text
+src/game/client/handlers.cpp:50
+```
+
+Clang-Tidy reported:
 
 ```text
 Called C++ object pointer is null
@@ -74,11 +137,15 @@ The warning refers to:
 response->prepareMessage()
 ```
 
-Clang-Tidy also reported three potential memory leak warnings related to dynamically allocated `QWidget` objects passed to `QMessageBox`.
+The analyzer determined that an execution path can reach this expression while `response` is null.
+
+### Potential memory leaks
+
+Clang-Tidy also reported three potential memory leak warnings in `handlers.cpp`, related to dynamically allocated `QWidget` objects passed to `QMessageBox`.
 
 ### Conclusion
 
-The strongest result is a potential null pointer dereference in client-side handler code.
+Clang-Tidy found four project-specific warnings. The strongest result is a potential null pointer dereference in the client-side handler code.
 
 ---
 
@@ -95,7 +162,21 @@ cd cppcheck
 ./run_cppcheck.sh
 ```
 
-### Findings
+The analyzed directories are:
+
+```text
+src/common
+src/server
+src/game
+```
+
+The complete output is stored in:
+
+```text
+cppcheck/results/cppcheck.txt
+```
+
+### Uninitialized members
 
 Cppcheck reported multiple uninitialized member variables, including:
 
@@ -111,11 +192,21 @@ ServerThreadParticipant::socket
 Client::color
 ```
 
-The `TurnContext::currentPlayerColor` finding correlates with Valgrind. Cppcheck identifies the missing initialization statically, while Valgrind shows runtime use of an uninitialized value in the same area of the program.
+### Important correlation
+
+The finding for:
+
+```text
+TurnContext::currentPlayerColor
+```
+
+correlates with the Valgrind Memcheck result.
+
+Cppcheck identified the missing initialization statically, while Valgrind showed runtime use of an uninitialized value in the same area of the program.
 
 ### Conclusion
 
-Cppcheck detected several uninitialized members, some of which were later confirmed dynamically by other tools.
+Cppcheck detected several uninitialized members. Its results are especially useful because later dynamic analysis confirmed that some of these values are actually used at runtime.
 
 ---
 
@@ -123,14 +214,20 @@ Cppcheck detected several uninitialized members, some of which were later confir
 
 ### Tool
 
-AddressSanitizer was used for dynamic memory analysis with:
+AddressSanitizer was used for dynamic memory analysis.
+
+The project was compiled with:
 
 ```text
 -fsanitize=address
 -fno-omit-frame-pointer
 ```
 
-Leak detection was enabled using `ASAN_OPTIONS=detect_leaks=1`.
+Leak detection was enabled using:
+
+```text
+ASAN_OPTIONS=detect_leaks=1
+```
 
 The analysis can be reproduced using:
 
@@ -139,31 +236,53 @@ cd address_sanitizer
 ./run_asan.sh
 ```
 
-### Findings
+### Full test suite behavior
 
-The complete existing Catch2 test suite aborted in `ActivateMagicMessageHandlerTest` after Qt reported:
+The complete existing Catch2 test suite did not finish under AddressSanitizer.
+
+Execution aborted in `ActivateMagicMessageHandlerTest` after Qt reported:
 
 ```text
 ASSERT failure in QList::at: "index out of range"
 ```
 
-To obtain a LeakSanitizer report, that test was excluded with the Catch2 filter:
+The process then terminated with `SIGABRT`.
+
+To obtain a LeakSanitizer report, the test was executed again while excluding:
+
+```text
+ActivateMagicMessageHandlerTest
+```
+
+using the Catch2 filter:
 
 ```text
 ~ActivateMagicMessageHandlerTest
 ```
 
-The filtered run reported:
+### LeakSanitizer result
+
+The filtered execution reported:
 
 ```text
 SUMMARY: AddressSanitizer: 198924 byte(s) leaked in 2953 allocation(s).
 ```
 
-The inspected direct leak traces were located mainly in external Qt/Wayland infrastructure. Some indirect traces passed through `Square` and `Board`, but indirect traces alone do not prove that those project classes are the root cause.
+The inspected direct leak traces were located primarily in external Qt/Wayland infrastructure.
+
+Some indirect leak traces passed through project code:
+
+```text
+Square::Square(QString, QObject*)       src/server/square.cpp:4
+Board::initializeTable()                src/server/board.cpp:243
+Board::Board(int, QObject*)             src/server/board.cpp:5
+```
+
+Because these were indirect leak traces, they do not by themselves prove that `Square` or `Board` are the root cause.
 
 ### Conclusion
 
-AddressSanitizer exposed unstable runtime behavior in `ActivateMagicMessageHandlerTest` and LeakSanitizer reported retained allocations.
+AddressSanitizer revealed unstable behavior in `ActivateMagicMessageHandlerTest` and LeakSanitizer reported retained allocations. The direct leak traces inspected were mainly located in external libraries, while some indirect traces included project objects.
 
 ---
 
@@ -177,6 +296,8 @@ LLVM libFuzzer was used to fuzz:
 MessageFactory::createMessage(QByteArray)
 ```
 
+This function was selected because it parses incoming message data and therefore represents a useful input boundary for fuzzing.
+
 The analysis can be reproduced using:
 
 ```bash
@@ -186,7 +307,22 @@ cd libfuzzer
 
 ### Fuzz target
 
-The custom fuzz target is `libfuzzer/fuzz_messagefactory.cpp`. For each generated input it converts the byte buffer into `QByteArray`, calls `MessageFactory::createMessage()`, deletes a successfully created message and catches the expected `std::runtime_error` for malformed or unknown message types.
+The custom fuzz target is located in:
+
+```text
+libfuzzer/fuzz_messagefactory.cpp
+```
+
+For every generated input, it:
+
+1. converts the byte buffer into `QByteArray`,
+2. calls `MessageFactory::createMessage()`,
+3. deletes a successfully created message,
+4. catches the expected `std::runtime_error` for malformed or unknown message types.
+
+Invalid message types are expected fuzz inputs and are therefore not treated as crashes.
+
+### Instrumentation
 
 The `common` library was built with:
 
@@ -195,28 +331,35 @@ The `common` library was built with:
 -fno-omit-frame-pointer
 ```
 
-and the final target was linked with:
+The final fuzz target was linked with:
 
 ```text
 -fsanitize=fuzzer,address
 ```
 
-### Results
+This enables libFuzzer coverage-guided mutation together with AddressSanitizer checks.
 
-The final run lasted approximately 31 seconds and executed 488435 inputs. The final statistics included:
+### Final statistics
+
+The final fuzzing run lasted approximately 31 seconds:
 
 ```text
-cov: 99
-ft: 148
-corp: 4/83b
-exec/s: 15755
+DONE   cov: 99 ft: 148 corp: 4/83b lim: 4096 exec/s: 15755 rss: 461Mb
+Done 488435 runs in 31 second(s)
+
+stat::number_of_executed_units: 488435
+stat::average_exec_per_sec:     15755
+stat::new_units_added:          4
+stat::peak_rss_mb:              461
 ```
 
-No crash or AddressSanitizer error was reported. `cov: 99` is a libFuzzer coverage counter and should not be interpreted as 99% line coverage.
+No crash or AddressSanitizer error was reported during the final run.
+
+The `cov: 99` value is a libFuzzer coverage counter and should not be interpreted as 99 percent line coverage.
 
 ### Conclusion
 
-libFuzzer stress-tested the message parser with hundreds of thousands of generated inputs without discovering a crashing input during the final run.
+libFuzzer exercised `MessageFactory::createMessage()` with hundreds of thousands of generated inputs. No crashing input or sanitizer-detected memory error was discovered during the final execution window.
 
 ---
 
@@ -233,7 +376,11 @@ The project was compiled with:
 -fno-omit-frame-pointer
 ```
 
-Stack traces were enabled with `UBSAN_OPTIONS=print_stacktrace=1`.
+Stack traces were enabled with:
+
+```text
+UBSAN_OPTIONS=print_stacktrace=1
+```
 
 The analysis can be reproduced using:
 
@@ -242,9 +389,22 @@ cd undefined_behavior_sanitizer
 ./run_ubsan.sh
 ```
 
-### Findings
+The complete output is stored in:
 
-UBSan reported an invalid `Color` enum value in `src/common/message.cpp:95` at:
+```text
+undefined_behavior_sanitizer/results/ubsan.txt
+```
+
+### Invalid enum value in CreateGameResponse
+
+UBSan reported:
+
+```text
+src/common/message.cpp:95:27:
+runtime error: load of value 836436083, which is not a valid value for type 'Color'
+```
+
+The affected statement is:
 
 ```cpp
 json["color"] = this->color;
@@ -252,13 +412,46 @@ json["color"] = this->color;
 
 Cppcheck had previously reported that `CreateGameResponse::color` is not initialized in one constructor.
 
-UBSan also reported an invalid `Color` enum value in `src/server/handlers.cpp:106` when `participant->color` is used to construct a `PlayerReadyResponse`.
+UBSan therefore shows the runtime consequence of that missing initialization.
+
+### Invalid enum value in BaseParticipant
+
+UBSan also reported:
+
+```text
+src/server/handlers.cpp:106:98:
+runtime error: load of value 1936281120, which is not a valid value for type 'Color'
+```
+
+The affected code uses:
+
+```cpp
+participant->color
+```
+
+when creating a `PlayerReadyResponse`.
 
 Cppcheck had previously reported that `BaseParticipant::color` is not initialized in its constructor.
 
+### Correlation with Cppcheck
+
+The two tools support the same conclusion from different directions:
+
+```text
+Cppcheck:
+- CreateGameResponse::color is not initialized
+- BaseParticipant::color is not initialized
+
+UBSan:
+- message.cpp loads an invalid Color value
+- handlers.cpp loads an invalid Color value
+```
+
+Cppcheck identifies the problem statically, while UBSan observes invalid values during actual execution.
+
 ### Conclusion
 
-UBSan detected two project-specific runtime errors involving invalid `Color` enum values. Both correlate directly with uninitialized members previously reported by Cppcheck.
+UndefinedBehaviorSanitizer detected two project-specific runtime errors involving invalid `Color` enum values. Both correlate directly with uninitialized members previously reported by Cppcheck.
 
 ---
 

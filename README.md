@@ -1,54 +1,65 @@
-# Analiza projekta "Ne ljuti se čoveče"
+# Analysis of the "Ne ljuti se čoveče" Project
 
-GitHub repozitorijum posvećen izradi samostalnog praktičnog seminarskog rada za potrebe kursa **Verifikacija softvera** na master studijama Matematičkog fakulteta u Beogradu.
+This GitHub repository contains an independent practical project completed for the **Software Verification** course at the Master's studies of the Faculty of Mathematics, University of Belgrade.
 
-Praktični seminarski rad podrazumeva primenu alata i tehnika za statičku i dinamičku verifikaciju softvera nad izabranim studentskim projektom.
+The project focuses on applying static and dynamic software verification tools and techniques to an existing open-source student project.
 
-**Autor: Marija Božić 1044/2023**
+**Author: Marija Božić 1044/2023**
 
-## Opis analiziranog projekta
+## Analyzed project
 
-Analizirani projekat je implementacija igre **"Ne ljuti se čoveče"** razvijena u programskom jeziku C++ korišćenjem Qt framework-a.
+The analyzed project is an implementation of the board game **"Ne ljuti se čoveče"**, developed in C++ using the Qt framework.
 
-Projekat sadrži:
+The project contains:
 
-1. zajedničke klase i poruke za komunikaciju,
-2. serverski deo aplikacije,
-3. klijentski deo igre,
-4. postojeći Catch2 test suite.
+1. common classes and communication messages,
+2. a server-side application,
+3. a client-side game application,
+4. an existing Catch2 test suite.
 
-Izvorni projekat:
+Original project:
 
-[GitLab repozitorijum projekta](https://gitlab.com/matf-bg-ac-rs/course-rs/projects-2023-2024/ne-ljuti-se-covece/)
+[GitLab repository](https://gitlab.com/matf-bg-ac-rs/course-rs/projects-2023-2024/ne-ljuti-se-covece/)
 
-Analiza je izvršena nad granom:
+The analysis was performed on branch:
 
 ```text
 main
 ```
 
-i commit-om:
+at commit:
 
 ```text
 b50bedc6240d0f02dba7c2fed278bbcf3b80900d
 ```
 
-Analizirani projekat je dodat u ovaj repozitorijum kao Git submodule.
+The analyzed project is included in this repository as a Git submodule.
 
-## Korišćeni alati i tehnike
+## Tools and techniques
 
-U okviru analize korišćeni su sledeći alati i tehnike:
+The following tools and techniques were used:
 
-1. **Valgrind Memcheck** — dinamička analiza memorije i detekcija korišćenja neinicijalizovanih vrednosti i curenja memorije.
-2. **Clang-Tidy** — statička analiza izvornog C++ koda.
-3. **Cppcheck** — statička analiza sa fokusom na neinicijalizovane promenljive, upozorenja i potencijalne greške.
-4. **AddressSanitizer** — dinamička analiza memorijskih grešaka i curenja memorije.
-5. **libFuzzer** — coverage-guided fuzz testiranje funkcije `MessageFactory::createMessage()` pomoću automatski generisanih i mutiranih ulaza.
-6. **UndefinedBehaviorSanitizer** — dinamička detekcija undefined behavior problema, uključujući korišćenje nevalidnih vrednosti enum tipa `Color`.
+1. **Valgrind Memcheck**  
+   Dynamic memory analysis used to detect uninitialized values, invalid memory usage and memory leaks.
 
-Postojeći Catch2 testovi iz analiziranog projekta korišćeni su kao izvršni scenario za pojedine dinamičke alate, ali se ne računaju kao posebna tehnika u ovom radu.
+2. **Clang-Tidy**  
+   Static analysis of the C++ source code.
 
-## Struktura repozitorijuma
+3. **Cppcheck**  
+   Static analysis focused on warnings, uninitialized members and potential defects.
+
+4. **AddressSanitizer**  
+   Dynamic analysis of memory errors and memory leaks.
+
+5. **libFuzzer**  
+   Coverage-guided fuzz testing of `MessageFactory::createMessage()` using automatically generated and mutated inputs.
+
+6. **UndefinedBehaviorSanitizer**  
+   Dynamic detection of undefined behavior, including invalid values of the `Color` enum type.
+
+The existing Catch2 tests from the analyzed project were used as execution scenarios for some of the dynamic tools, but they are not counted as a separate verification technique in this project.
+
+## Repository structure
 
 ```text
 .
@@ -69,39 +80,74 @@ Postojeći Catch2 testovi iz analiziranog projekta korišćeni su kao izvršni s
 └── ProjectAnalysisReport.md
 ```
 
-Svaki direktorijum alata sadrži rezultate analize i skriptu za reprodukciju rezultata, zajedno sa dodatnom dokumentacijom i slikama gde je to primenljivo.
+Each tool directory contains the corresponding analysis results, a reproducibility script and additional documentation and screenshots where applicable.
 
-## Pokretanje analiza
+## Running the analyses
+
+Each tool can be executed from its own directory.
+
+Valgrind Memcheck:
 
 ```bash
-cd valgrind && ./run_valgrind.sh
-cd ../clang_tidy && ./run_clang_tidy.sh
-cd ../cppcheck && ./run_cppcheck.sh
-cd ../address_sanitizer && ./run_asan.sh
-cd ../libfuzzer && ./run_libfuzzer.sh
-cd ../undefined_behavior_sanitizer && ./run_ubsan.sh
+cd valgrind
+./run_valgrind.sh
 ```
 
-Detaljna uputstva i rezultati nalaze se u `README.md` fajlu svakog pojedinačnog alata.
+Clang-Tidy:
 
-## Najvažniji rezultati
+```bash
+cd clang_tidy
+./run_clang_tidy.sh
+```
 
-Analiza je pokazala više problema u projektu, među kojima se posebno izdvajaju:
+Cppcheck:
 
-- korišćenje neinicijalizovanog `TurnContext::currentPlayerColor`,
-- neinicijalizovani članovi kao što su `CreateGameResponse::color` i `BaseParticipant::color`,
-- mogući null pointer dereference u klijentskom kodu,
-- potencijalni problemi sa upravljanjem memorijom,
-- nevalidne vrednosti enum tipa `Color` detektovane pomoću UndefinedBehaviorSanitizer-a.
+```bash
+cd cppcheck
+./run_cppcheck.sh
+```
 
-Više alata je nezavisno ukazalo na iste probleme. Na primer, Cppcheck je statički detektovao neinicijalizovane `Color` članove, dok je UndefinedBehaviorSanitizer tokom izvršavanja pokazao da se ti članovi mogu koristiti sa nevalidnim vrednostima.
+AddressSanitizer:
 
-Valgrind Memcheck je dodatno pokazao korišćenje neinicijalizovane vrednosti u logici povezanoj sa `TurnContext::currentPlayerColor`.
+```bash
+cd address_sanitizer
+./run_asan.sh
+```
 
-libFuzzer je u završnom pokretanju izvršio 488435 ulaza nad `MessageFactory::createMessage()` bez pronađenog crash-a ili AddressSanitizer greške.
+libFuzzer:
 
-## Izveštaj
+```bash
+cd libfuzzer
+./run_libfuzzer.sh
+```
 
-Detaljan opis korišćenih alata, rezultata i zaključaka nalazi se u:
+UndefinedBehaviorSanitizer:
+
+```bash
+cd undefined_behavior_sanitizer
+./run_ubsan.sh
+```
+
+Detailed instructions and results are available in the `README.md` file inside each tool directory.
+
+## Main findings
+
+The analysis revealed several relevant issues in the project, including:
+
+- use of the uninitialized `TurnContext::currentPlayerColor`,
+- uninitialized members such as `CreateGameResponse::color` and `BaseParticipant::color`,
+- a possible null pointer dereference in client-side code,
+- potential memory-management issues,
+- invalid values of the `Color` enum detected by UndefinedBehaviorSanitizer.
+
+Multiple tools independently pointed to related problems. For example, Cppcheck statically detected uninitialized `Color` members, while UndefinedBehaviorSanitizer showed that these members can actually be read with invalid values at runtime.
+
+Valgrind Memcheck additionally detected runtime use of an uninitialized value in logic related to `TurnContext::currentPlayerColor`.
+
+In the final fuzzing run, libFuzzer executed 488435 inputs against `MessageFactory::createMessage()` without finding a crash or an AddressSanitizer-detected memory error.
+
+## Report
+
+A detailed description of all tools, results and conclusions is available in:
 
 [ProjectAnalysisReport.md](ProjectAnalysisReport.md)
