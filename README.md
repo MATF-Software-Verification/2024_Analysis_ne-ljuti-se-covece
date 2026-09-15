@@ -57,6 +57,9 @@ The following tools and techniques were used:
 6. **UndefinedBehaviorSanitizer**  
    Dynamic detection of undefined behavior, including invalid values of the `Color` enum type.
 
+7. **Lizard**  
+   Static code-complexity analysis focused on cyclomatic complexity, function size and related structural metrics.
+
 The existing Catch2 tests from the analyzed project were used as execution scenarios for some of the dynamic tools, but they are not counted as a separate verification technique in this project.
 
 ## Repository structure
@@ -71,6 +74,7 @@ The existing Catch2 tests from the analyzed project were used as execution scena
 ├── clang_tidy/
 ├── cppcheck/
 ├── libfuzzer/
+├── lizard/
 ├── ne-ljuti-se-covece/
 ├── undefined_behavior_sanitizer/
 ├── valgrind/
@@ -128,23 +132,41 @@ cd undefined_behavior_sanitizer
 ./run_ubsan.sh
 ```
 
+Lizard:
+
+```bash
+cd lizard
+./run_lizard.sh
+```
+
 Detailed instructions and results are available in the `README.md` file inside each tool directory.
 
 ## Main findings
 
-The analysis revealed several relevant issues in the project, including:
+The analysis revealed several relevant issues and structural characteristics in the project, including:
 
 - use of the uninitialized `TurnContext::currentPlayerColor`,
 - uninitialized members such as `CreateGameResponse::color` and `BaseParticipant::color`,
 - a possible null pointer dereference in client-side code,
 - potential memory-management issues,
-- invalid values of the `Color` enum detected by UndefinedBehaviorSanitizer.
+- invalid values of the `Color` enum detected by UndefinedBehaviorSanitizer,
+- several functions with relatively high cyclomatic complexity.
 
 Multiple tools independently pointed to related problems. For example, Cppcheck statically detected uninitialized `Color` members, while UndefinedBehaviorSanitizer showed that these members can actually be read with invalid values at runtime.
 
 Valgrind Memcheck additionally detected runtime use of an uninitialized value in logic related to `TurnContext::currentPlayerColor`.
 
-In the final fuzzing run, libFuzzer executed 488435 inputs against `MessageFactory::createMessage()` without finding a crash or an AddressSanitizer-detected memory error.
+In the final fuzzing run, libFuzzer executed hundreds of thousands of inputs against `MessageFactory::createMessage()` without finding a crash or an AddressSanitizer-detected memory error.
+
+Lizard analyzed 37 files and 293 functions and reported three functions above its default cyclomatic-complexity warning threshold:
+
+```text
+Board::isPawnMoveValid                         CCN 19
+MessageFactory::createMessage                  CCN 18
+ActivateMagicMessageHandler::handleMessage     CCN 16
+```
+
+This result is particularly relevant for `MessageFactory::createMessage()`, which was also selected as the libFuzzer target.
 
 ## Report
 

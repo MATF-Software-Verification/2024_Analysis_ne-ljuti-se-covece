@@ -262,20 +262,14 @@ using the Catch2 filter:
 
 ### LeakSanitizer result
 
-The filtered execution reported:
-
-```text
-SUMMARY: AddressSanitizer: 198924 byte(s) leaked in 2953 allocation(s).
-```
-
-The inspected direct leak traces were located primarily in external Qt/Wayland infrastructure.
+The filtered execution reported retained allocations. The inspected direct leak traces were located primarily in external Qt/Wayland infrastructure.
 
 Some indirect leak traces passed through project code:
 
 ```text
-Square::Square(QString, QObject*)       src/server/square.cpp:4
-Board::initializeTable()                src/server/board.cpp:243
-Board::Board(int, QObject*)             src/server/board.cpp:5
+Square::Square(QString, QObject*)       src/server/square.cpp
+Board::initializeTable()                src/server/board.cpp
+Board::Board(int, QObject*)             src/server/board.cpp
 ```
 
 Because these were indirect leak traces, they do not by themselves prove that `Square` or `Board` are the root cause.
@@ -339,27 +333,15 @@ The final fuzz target was linked with:
 
 This enables libFuzzer coverage-guided mutation together with AddressSanitizer checks.
 
-### Final statistics
+### Final result
 
-The final fuzzing run lasted approximately 31 seconds:
+The fuzzing run executed hundreds of thousands of inputs without reporting a crash or an AddressSanitizer error.
 
-```text
-DONE   cov: 99 ft: 148 corp: 4/83b lim: 4096 exec/s: 15755 rss: 461Mb
-Done 488435 runs in 31 second(s)
-
-stat::number_of_executed_units: 488435
-stat::average_exec_per_sec:     15755
-stat::new_units_added:          4
-stat::peak_rss_mb:              461
-```
-
-No crash or AddressSanitizer error was reported during the final run.
-
-The `cov: 99` value is a libFuzzer coverage counter and should not be interpreted as 99 percent line coverage.
+The `cov` value printed by libFuzzer is an internal coverage counter and should not be interpreted as a percentage of line coverage.
 
 ### Conclusion
 
-libFuzzer exercised `MessageFactory::createMessage()` with hundreds of thousands of generated inputs. No crashing input or sanitizer-detected memory error was discovered during the final execution window.
+libFuzzer exercised `MessageFactory::createMessage()` with a large number of generated and mutated inputs. No crashing input or sanitizer-detected memory error was discovered during the final execution window.
 
 ---
 
@@ -397,11 +379,10 @@ undefined_behavior_sanitizer/results/ubsan.txt
 
 ### Invalid enum value in CreateGameResponse
 
-UBSan reported:
+UBSan reported a runtime load of a value that was not valid for enum type `Color` in:
 
 ```text
-src/common/message.cpp:95:27:
-runtime error: load of value 836436083, which is not a valid value for type 'Color'
+src/common/message.cpp
 ```
 
 The affected statement is:
@@ -416,11 +397,10 @@ UBSan therefore shows the runtime consequence of that missing initialization.
 
 ### Invalid enum value in BaseParticipant
 
-UBSan also reported:
+UBSan also reported an invalid `Color` value in:
 
 ```text
-src/server/handlers.cpp:106:98:
-runtime error: load of value 1936281120, which is not a valid value for type 'Color'
+src/server/handlers.cpp
 ```
 
 The affected code uses:
@@ -443,8 +423,8 @@ Cppcheck:
 - BaseParticipant::color is not initialized
 
 UBSan:
-- message.cpp loads an invalid Color value
-- handlers.cpp loads an invalid Color value
+- runtime use of an invalid Color value in message.cpp
+- runtime use of an invalid Color value in handlers.cpp
 ```
 
 Cppcheck identifies the problem statically, while UBSan observes invalid values during actual execution.
@@ -455,14 +435,110 @@ UndefinedBehaviorSanitizer detected two project-specific runtime errors involvin
 
 ---
 
+## Lizard
+
+### Tool
+
+Lizard was used for static code-complexity analysis of the production source code.
+
+The analysis can be reproduced using:
+
+```bash
+cd lizard
+./run_lizard.sh
+```
+
+The analyzed directories are:
+
+```text
+src/common
+src/server
+src/game
+```
+
+The complete output is stored in:
+
+```text
+lizard/results/lizard.txt
+```
+
+Lizard reports several structural metrics, including:
+
+- NLOC - logical lines of code,
+- CCN - Cyclomatic Complexity Number,
+- token count,
+- number of parameters,
+- function length.
+
+The most important metric in this analysis is CCN, which represents the number of independent execution paths through a function.
+
+### Results
+
+Lizard analyzed:
+
+```text
+37 files
+293 functions
+3294 total NLOC
+```
+
+The overall average values were:
+
+```text
+Avg.NLOC  = 8.4
+Avg.CCN   = 1.8
+Avg.token = 57.2
+```
+
+A total of three warnings were reported for functions whose cyclomatic complexity exceeded the default warning threshold of 15.
+
+### High-complexity functions
+
+The three functions reported were:
+
+```text
+Board::isPawnMoveValid                         CCN 19
+MessageFactory::createMessage                  CCN 18
+ActivateMagicMessageHandler::handleMessage     CCN 16
+```
+
+`Board::isPawnMoveValid` had the highest cyclomatic complexity with a CCN of 19.
+
+`MessageFactory::createMessage` had a CCN of 18. This is particularly relevant because the same function was selected as the libFuzzer target due to its role in parsing external message data and its multiple execution paths.
+
+`ActivateMagicMessageHandler::handleMessage` had a CCN of 16. Other verification tools also reported issues in the same general part of the codebase, which makes this function an interesting candidate for further testing and refactoring.
+
+### Interpretation
+
+High cyclomatic complexity does not necessarily mean that a function contains a defect.
+
+Instead, it indicates that a function contains a relatively large number of independent execution paths and may therefore:
+
+- require more test cases,
+- be harder to understand,
+- be harder to maintain,
+- be more error-prone when modified.
+
+### Conclusion
+
+Lizard complements the other verification tools by focusing on structural complexity rather than runtime memory errors, undefined behavior or conventional static bug detection.
+
+The analysis identified three functions above the default cyclomatic-complexity warning threshold, with `Board::isPawnMoveValid` having the highest CCN value.
+
+---
+
 ## Overall conclusion
 
-The six selected tools complement each other:
+The selected tools complement each other:
 
-- Valgrind Memcheck and UBSan detected runtime use of invalid or uninitialized values.
+- Valgrind Memcheck detected runtime use of uninitialized values.
 - Cppcheck independently identified several missing member initializations.
 - Clang-Tidy found a potential null pointer dereference and possible memory-management issues.
 - AddressSanitizer exposed unstable runtime behavior and reported retained allocations.
 - libFuzzer stress-tested the message parser using automatically generated inputs without discovering a crashing input in the final run.
+- UndefinedBehaviorSanitizer confirmed runtime use of invalid enum values.
+- Lizard identified structurally complex functions that are more difficult to test and maintain.
 
-The most important recurring theme across the analysis is missing initialization of state and enum-valued members. Several independent tools identified different manifestations of this problem, which increases confidence that these findings represent real defects in the analyzed project.
+The strongest recurring theme across the analysis is missing initialization of state and enum-valued members. Several independent tools identified different manifestations of this problem.
+
+Lizard adds a complementary structural perspective by showing that some important functions, including `MessageFactory::createMessage()` and `ActivateMagicMessageHandler::handleMessage()`, also have relatively high cyclomatic complexity.
