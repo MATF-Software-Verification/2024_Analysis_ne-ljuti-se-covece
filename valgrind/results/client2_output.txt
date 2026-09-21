@@ -1,0 +1,475 @@
+Connection to server suceeded!
+Starting JoinGameResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"PlayerReadyResponse\"}"
+Starting PlayerReadyResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"StartGameResponse\"}"
+Starting StartGameResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"Ne mozete baciti kockicu, jer niste na potezu!\",\"number\":0,\"success\":false,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"Ne mozete baciti kockicu, jer niste na potezu!\",\"number\":0,\"success\":false,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f40\",\"oldField\":\"blue1\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f44\",\"oldField\":\"f40\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"Ne mozete baciti kockicu, jer niste na potezu!\",\"number\":0,\"success\":false,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f1\",\"oldField\":\"red4\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":1,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f5\",\"oldField\":\"f1\",\"success\":true,\"type\":\"MovePawnResponse\"}{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f48\",\"oldField\":\"f44\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f10\",\"oldField\":\"f5\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}{\"color\":2,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f50\",\"oldField\":\"f48\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f16\",\"oldField\":\"f10\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":1,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f1\",\"oldField\":\"red2\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f20\",\"oldField\":\"f16\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}{\"color\":2,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f51\",\"oldField\":\"f50\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f25\",\"oldField\":\"f20\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}{\"color\":2,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f14\",\"oldField\":\"green4\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f20\",\"oldField\":\"f14\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":3,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f23\",\"oldField\":\"f20\",\"success\":true,\"type\":\"MovePawnResponse\"}{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f27\",\"oldField\":\"yellow1\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f31\",\"oldField\":\"f27\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f3\",\"oldField\":\"f51\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f7\",\"oldField\":\"f1\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":1,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f8\",\"oldField\":\"f7\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f27\",\"oldField\":\"f23\",\"success\":true,\"type\":\"MovePawnResponse\"}{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f32\",\"oldField\":\"f31\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":1,\"eatenPawnNewField\":\"red2\",\"errorMessage\":\"\",\"newField\":\"f8\",\"oldField\":\"f3\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":3,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f28\",\"oldField\":\"f25\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}{\"color\":2,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f14\",\"oldField\":\"green3\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":2,\"eatenColor\":3,\"eatenPawnNewField\":\"yellow1\",\"errorMessage\":\"\",\"newField\":\"f32\",\"oldField\":\"f27\",\"success\":true,\"type\":\"MovePawnResponse\"}{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"Ne mozete pomeriri pijuna, nevalidan potez!\",\"newField\":\"\",\"oldField\":\"\",\"success\":false,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":3,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f11\",\"oldField\":\"f8\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f33\",\"oldField\":\"f28\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}{\"color\":2,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f37\",\"oldField\":\"f32\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f13\",\"oldField\":\"f11\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f38\",\"oldField\":\"f33\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}{\"color\":2,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f39\",\"oldField\":\"f37\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f40\",\"oldField\":\"blue4\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f46\",\"oldField\":\"f40\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f48\",\"oldField\":\"f46\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":3,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f41\",\"oldField\":\"f38\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}{\"color\":2,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f20\",\"oldField\":\"f14\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f43\",\"oldField\":\"f39\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f27\",\"oldField\":\"yellow2\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f32\",\"oldField\":\"f27\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f1\",\"oldField\":\"f48\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":2,\"eatenPawnNewField\":\"green3\",\"errorMessage\":\"\",\"newField\":\"f43\",\"oldField\":\"f41\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}{\"color\":2,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f25\",\"oldField\":\"f20\",\"success\":true,\"type\":\"MovePawnResponse\"}{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f27\",\"oldField\":\"yellow4\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f37\",\"oldField\":\"f32\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f6\",\"oldField\":\"f1\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f48\",\"oldField\":\"f43\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}{\"color\":2,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f31\",\"oldField\":\"f25\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f14\",\"oldField\":\"green3\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":2,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f18\",\"oldField\":\"f14\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f43\",\"oldField\":\"f37\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f28\",\"oldField\":\"f27\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f12\",\"oldField\":\"f6\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f40\",\"oldField\":\"blue3\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f14\",\"oldField\":\"f12\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"kr1\",\"oldField\":\"f48\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}{\"color\":2,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f24\",\"oldField\":\"f18\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"eatenColor\":0,\"eatenPawnNewField\":\"blue1\",\"errorMessage\":\"\",\"newField\":\"f14\",\"oldField\":\"green2\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":2,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f18\",\"oldField\":\"f14\",\"success\":true,\"type\":\"MovePawnResponse\"}{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f44\",\"oldField\":\"f43\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"Niste na potezu, molimo sacekajte trenutnog igraca!\",\"success\":false,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":3,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f43\",\"oldField\":\"f40\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f1\",\"oldField\":\"red1\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":1,\"errorMessage\":\"\",\"number\":3,\"success\":true,\"type\":\"RollDiceResponse\"}{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"kr4\",\"oldField\":\"kr1\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"eatenColor\":3,\"eatenPawnNewField\":\"yellow2\",\"errorMessage\":\"\",\"newField\":\"f28\",\"oldField\":\"f24\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"broadcast\":true,\"color\":3,\"errorMessage\":\"\",\"fieldName\":\"shield\",\"newDiceNumber\":0,\"remainingMagicNumber\":2,\"success\":true,\"type\":\"ActivateMagicResponse\"}"
+Starting ActivateMagicResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f46\",\"oldField\":\"f44\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"broadcast\":true,\"color\":0,\"errorMessage\":\"\",\"fieldName\":\"double_dice\",\"newDiceNumber\":0,\"remainingMagicNumber\":2,\"success\":true,\"type\":\"ActivateMagicResponse\"}"
+Starting ActivateMagicResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f25\",\"oldField\":\"f13\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f30\",\"oldField\":\"f25\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":3,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f4\",\"oldField\":\"f1\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}{\"color\":2,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f33\",\"oldField\":\"f31\",\"success\":true,\"type\":\"MovePawnResponse\"}{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"broadcast\":true,\"color\":3,\"errorMessage\":\"\",\"fieldName\":\"plus_1\",\"newDiceNumber\":3,\"remainingMagicNumber\":2,\"success\":true,\"type\":\"ActivateMagicResponse\"}"
+Starting ActivateMagicResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f49\",\"oldField\":\"f46\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"broadcast\":true,\"color\":0,\"errorMessage\":\"\",\"fieldName\":\"plus_1\",\"newDiceNumber\":7,\"remainingMagicNumber\":2,\"success\":true,\"type\":\"ActivateMagicResponse\"}"
+Starting ActivateMagicResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f37\",\"oldField\":\"f30\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":3,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f7\",\"oldField\":\"f4\",\"success\":true,\"type\":\"MovePawnResponse\"}{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f29\",\"oldField\":\"f28\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"broadcast\":false,\"color\":3,\"errorMessage\":\"Ne mozete iskoristi ovu magiju nakon bacanja kockice!\",\"fieldName\":\"\",\"newDiceNumber\":0,\"remainingMagicNumber\":0,\"success\":false,\"type\":\"ActivateMagicResponse\"}"
+Starting ActivateMagicResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f51\",\"oldField\":\"f49\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"broadcast\":true,\"color\":0,\"errorMessage\":\"\",\"fieldName\":\"remote_dice\",\"newDiceNumber\":6,\"remainingMagicNumber\":2,\"success\":true,\"type\":\"ActivateMagicResponse\"}"
+Starting ActivateMagicResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f40\",\"oldField\":\"blue1\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f38\",\"oldField\":\"f37\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f11\",\"oldField\":\"f7\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}{\"color\":2,\"errorMessage\":\"\",\"number\":3,\"success\":true,\"type\":\"RollDiceResponse\"}{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f36\",\"oldField\":\"f33\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f1\",\"oldField\":\"f51\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":3,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"kb3\",\"oldField\":\"f38\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f12\",\"oldField\":\"f11\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Nije uspesno kreirana poruka: "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}{\"color\":2,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Unknown exception
+Od servera je stiglo:  "{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f33\",\"oldField\":\"f29\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava

@@ -75,7 +75,45 @@ still reachable
 
 A significant number of leak records passed through Qt, Wayland, GTK and other system libraries. Those records were not automatically attributed to the analyzed project.
 
-The strongest project-specific Valgrind result is therefore the use of an uninitialized value.
+Further inspection of the existing log identifies concrete test-owned leaks:
+`messageParsingTest.cpp:121` allocates a StartGameMessage without deletion
+(136 bytes: 16 direct and 120 indirect), and `boardTest.cpp:35` allocates a Board
+without deletion (23,728 bytes: 88 direct and 23,640 indirect). Catch2 frames in
+these stacks do not indicate a Catch2 defect. Production ownership of the
+objects inside GameManager, Board and Player remains a separate issue.
+
+The aggregate test leak totals cannot be attributed wholly to real application
+usage. The strongest initialization finding remains the uninitialized value,
+but the triggering magic tests omit current-player setup that the normal
+successful start-game handler performs.
+
+A standalone server/two-client gameplay experiment has now been completed;
+its procedure, per-process totals and allocation records are documented in
+[valgrind/README.md](valgrind/README.md#recorded-gameplay-results). The user played
+several turns, closed both client windows and interrupted the server with Ctrl+C.
+The original test log was preserved without rerunning the tests.
+
+The server reported 76,504 bytes definitely lost and 207,390 indirectly lost;
+client 1 reported 16,904 and 877 bytes, and client 2 reported 14,936 and 1,484
+bytes respectively. These totals describe different processes and must not be
+subtracted from the test totals to calculate production leakage. Server status
+130 reflects interruption, not graceful cleanup; client status 97 is the
+configured Memcheck error status. Still-reachable memory is not automatically
+lost memory.
+
+Concrete production evidence includes an undeleted parsed response in
+`Bot::sendMessage` (`participants.cpp:130`, server loss record 7,551: 96 direct
+and 240 indirect bytes), an uncollected `BroadcastingThread` allocated by
+`BaseParticipant::sendResponse` (record 7,691: 32 direct and 536 indirect bytes),
+and the parent widget allocated by `QMessageBox::information(new QWidget(), ...)`
+in `JoinGameResponseHandler` (`handlers.cpp:69`, client 2 record 12,253: 40 direct
+and 1,178 indirect bytes). These ownership defects occur without Catch2 and
+would remain after fixing only test cleanup.
+
+Serialization-related uninitialized-value reports
+on the server and Qt/Wayland reports on clients remain separate from the proven
+leak examples; the new serialization stack alone does not establish which field
+was uninitialized.
 
 ### Conclusion
 
