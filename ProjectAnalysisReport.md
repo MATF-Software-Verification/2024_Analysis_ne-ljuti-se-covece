@@ -318,6 +318,38 @@ AddressSanitizer revealed unstable behavior in `ActivateMagicMessageHandlerTest`
 
 ---
 
+### Supplement: controlled experiments and standalone gameplay
+
+Subsequent experiments extended the original ASan analysis. The controlled changes were recorded as patches in a temporary source copy; they were not applied to the original project for the standalone gameplay run.
+
+In the isolated `ActivateMagicMessageHandlerTest`, explicitly setting the current turn color and checking the response cast allowed all 16 assertions to pass. The run then reached LeakSanitizer, which reported **14332 bytes in 205 allocations**. This separates the test setup failure from the remaining memory leaks.
+
+A single `BoardTest` section was compared in three configurations; all six assertions passed in each:
+
+| Configuration | LeakSanitizer result |
+| --- | --- |
+| Original raw Board allocation | 23728 bytes in 353 allocations |
+| Board managed by `std::unique_ptr` | 22902 bytes in 348 allocations |
+| Automatic Board destruction plus QObject ownership of descendants | No leak report; process exit code 0 |
+
+The final configuration made Board the parent of its players and table squares, Player the parent of its pawns and home/finish squares, and forwarded the Pawn parent to its QObject base constructor. This comparison provides evidence that both the test-owned Board lifetime and incomplete ownership of its descendants contribute to leaks in this selected scenario. It does not establish that the complete application is leak-free.
+
+The original standalone applications were subsequently built in Debug mode with ASan instrumentation and run with `ASAN_OPTIONS=detect_leaks=1`. One server and two clients exercised a game with two human players and two bots. Logs include joining, game start, dice rolls, pawn moves, end-turn responses and requests for several magics. The session duration and exit statuses were not recorded, and the logs do not establish completion to victory.
+
+| Process | Final LeakSanitizer result | Evidence |
+| --- | --- | --- |
+| Client 1 | 6885 bytes in 74 allocations | [Client 1 log](address_sanitizer/results/game_client.txt) |
+| Client 2 | 6964 bytes in 69 allocations | [Client 2 log](address_sanitizer/results/game_client2.txt) |
+| Server | No final leak summary | [Server log](address_sanitizer/results/game_server.txt) |
+
+No use-after-free, buffer-overflow or double-free diagnostic appears in these logs. Both clients reached a final leak summary. The server recorded successful startup and both client disconnections, but the absence of a final summary prevents a conclusion about its leaks. The manual procedure used Ctrl+C to stop the server; this does not establish graceful cleanup, and the log itself does not record the termination signal.
+
+All client direct leak records originate from `libwayland-client` allocations. This identifies allocation paths without proving exclusive platform responsibility. Client 2 also reports project-specific indirect allocations: the parent widget created by `QMessageBox::information(new QWidget(), ...)` in `JoinGameResponseHandler::handleResponse` (`handlers.cpp:69`), and the fallback handler allocated in `MainWindow::on_joinButton_clicked` (`mainwindow.cpp:94`). The former has no arranged deletion and matches a source location identified by standalone Valgrind analysis. The latter uses the next handler as the current handler's QObject parent, so destruction of the stack-allocated handler does not delete that parent.
+
+**Supplementary conclusion:** standalone gameplay confirms reported client leaks independently of Catch2 cleanup and supplies additional evidence of project ownership defects. The controlled Board comparison further distinguishes a lost test-owned object from incomplete cleanup of its descendants. Platform attribution and server leaks remain unresolved; totals from different test, gameplay and tool configurations must not be directly subtracted or treated as equivalent measurements.
+
+See the [detailed ASan documentation](address_sanitizer/README.md) for controlled-experiment logs and patches, and the [standalone gameplay report](address_sanitizer/results/gameplay_analysis.md) for allocation subtotals and interpretation.
+
 ## libFuzzer
 
 ### Tool

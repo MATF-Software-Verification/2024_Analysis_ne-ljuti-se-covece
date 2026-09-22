@@ -1,0 +1,64 @@
+--- a/src/server/board.cpp
++++ b/src/server/board.cpp
+@@ -20,7 +20,7 @@
+     int mappedColor = (color + 3) % 4;
+     int start = 13 * mappedColor;
+     int end = 13 * mappedColor - 2 < 0 ? 50 : 13 * mappedColor - 2;
+-    players.push_back(new Player(color, start, end));
++    players.push_back(new Player(color, start, end, this));
+ }
+ 
+ bool Board::isPawnMoveValid(QString name, Color color, qint32 diceNumber)
+@@ -240,8 +240,8 @@
+                               "f41", "f42", "f43", "f44", "f45", "f46", "f47", "f48", "f49", "f50", "f51", "f52", };
+ 
+     for(QString &name : names){
+-        this->table.push_back( new Square(name));
+-    }
+-}
+-
+-
++        this->table.push_back( new Square(name, this));
++    }
++}
++
++
+--- a/src/server/player.cpp
++++ b/src/server/player.cpp
+@@ -11,7 +11,7 @@
+     this->initMagics();
+     for(int i=0 ; i<4 ; i++)
+     {
+-        pawns.push_back(new Pawn(col, this->startSquares[i]));
++        pawns.push_back(new Pawn(col, this->startSquares[i], this));
+     }
+ }
+ 
+@@ -60,7 +60,7 @@
+     for (int i = 0; i < 4; i++) {
+         QString name = names[i];
+          name.insert(0, c);
+-        this->finishSquares.push_back( new Square(name));
++        this->finishSquares.push_back( new Square(name, this));
+     }
+ }
+ 
+@@ -83,7 +83,7 @@
+     for (int i = 0; i < 4; i++) {
+         QString name = names[i];
+         name.insert(0, c);
+-        this->startSquares.push_back( new Square(name, color, i));
++        this->startSquares.push_back( new Square(name, color, i, this));
+ 
+     }
+ }
+--- a/src/server/pawn.cpp
++++ b/src/server/pawn.cpp
+@@ -1,6 +1,7 @@
+ #include "pawn.h"
+ 
+ Pawn::Pawn( Color col, Square *square, QObject* parent )
++    : QObject(parent)
+ {
+     this->square = square;
+     this->isHome = true;

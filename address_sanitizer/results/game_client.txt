@@ -1,0 +1,1067 @@
+Connection to server suceeded!
+Starting CreateGameResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"joined\":true,\"success\":true,\"type\":\"JoinGameResponse\"}"
+Starting JoinGameResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"PlayerReadyResponse\"}"
+Starting PlayerReadyResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"StartGameResponse\"}"
+Starting StartGameResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f1\",\"oldField\":\"red1\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f5\",\"oldField\":\"f1\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f14\",\"oldField\":\"green4\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f16\",\"oldField\":\"f14\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f6\",\"oldField\":\"f5\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f17\",\"oldField\":\"f16\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f40\",\"oldField\":\"blue1\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f44\",\"oldField\":\"f40\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f7\",\"oldField\":\"f6\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f19\",\"oldField\":\"f17\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":3,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"broadcast\":false,\"color\":0,\"errorMessage\":\"Ne mozete iskoristi ovu magiju pre bacanje kockice!\",\"fieldName\":\"\",\"newDiceNumber\":-1094795586,\"remainingMagicNumber\":-1094795586,\"success\":false,\"type\":\"ActivateMagicResponse\"}"
+Starting ActivateMagicResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"broadcast\":true,\"color\":0,\"errorMessage\":\"\",\"fieldName\":\"double_dice\",\"newDiceNumber\":0,\"remainingMagicNumber\":2,\"success\":true,\"type\":\"ActivateMagicResponse\"}"
+Starting ActivateMagicResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f2\",\"oldField\":\"f44\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f8\",\"oldField\":\"f7\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f23\",\"oldField\":\"f19\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"broadcast\":true,\"color\":0,\"errorMessage\":\"\",\"fieldName\":\"shield\",\"newDiceNumber\":0,\"remainingMagicNumber\":2,\"success\":true,\"type\":\"ActivateMagicResponse\"}"
+Starting ActivateMagicResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"Imate slobodan potez, morate pomeriti figuricu!\",\"success\":false,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f4\",\"oldField\":\"f2\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f9\",\"oldField\":\"f8\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f14\",\"oldField\":\"green3\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":1,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f15\",\"oldField\":\"f14\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f27\",\"oldField\":\"yellow1\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"broadcast\":true,\"color\":3,\"errorMessage\":\"\",\"fieldName\":\"double_dice\",\"newDiceNumber\":0,\"remainingMagicNumber\":2,\"success\":true,\"type\":\"ActivateMagicResponse\"}"
+Starting ActivateMagicResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f37\",\"oldField\":\"f27\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"broadcast\":true,\"color\":0,\"errorMessage\":\"\",\"fieldName\":\"plus_1\",\"newDiceNumber\":3,\"remainingMagicNumber\":2,\"success\":true,\"type\":\"ActivateMagicResponse\"}"
+Starting ActivateMagicResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"Imate slobodan potez, morate pomeriti figuricu!\",\"success\":false,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f7\",\"oldField\":\"f4\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f13\",\"oldField\":\"f9\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":3,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f18\",\"oldField\":\"f15\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f41\",\"oldField\":\"f37\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"broadcast\":true,\"color\":0,\"errorMessage\":\"\",\"fieldName\":\"remote_dice\",\"newDiceNumber\":5,\"remainingMagicNumber\":2,\"success\":true,\"type\":\"ActivateMagicResponse\"}"
+Starting ActivateMagicResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f12\",\"oldField\":\"f7\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":4,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f17\",\"oldField\":\"f13\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f28\",\"oldField\":\"f23\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"number\":5,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f46\",\"oldField\":\"f41\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":6,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f40\",\"oldField\":\"blue4\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"errorMessage\":\"\",\"number\":3,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":0,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f15\",\"oldField\":\"f12\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":1,\"errorMessage\":\"\",\"number\":2,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":1,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f19\",\"oldField\":\"f17\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+Od servera je stiglo:  "{\"color\":2,\"errorMessage\":\"\",\"number\":3,\"success\":true,\"type\":\"RollDiceResponse\"}"
+Starting RollDiceResponseHandler..
+Od servera je stiglo:  "{\"color\":2,\"eatenColor\":4,\"eatenPawnNewField\":\"\",\"errorMessage\":\"\",\"newField\":\"f31\",\"oldField\":\"f28\",\"success\":true,\"type\":\"MovePawnResponse\"}"
+Starting MovePawnResponseHandler..
+Od servera je stiglo:  "{\"color\":3,\"errorMessage\":\"\",\"success\":true,\"type\":\"EndTurnResponse\"}"
+Starting EndTurnResponseHandler..
+EndTurnHandler zavrsava
+
+=================================================================
+==186086==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 2784 byte(s) in 29 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd407 in wl_proxy_marshal_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa407) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af171a1139 in QtWaylandClient::QWaylandXdgActivationV1::requestXdgActivationToken(QtWaylandClient::QWaylandDisplay*, wl_surface*, unsigned int, QString const&) (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc139) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #5 0x76af171a13a5 in QtWaylandClient::QWaylandXdgSurface::requestActivate() (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc3a5) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #6 0x76af2c183d9a  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183d9a) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #7 0x76af2c79a983 in QGuiApplication::focusObjectChanged(QObject*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x19a983) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #8 0x76af2c18413e  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x18413e) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #9 0x76af2c7dd693 in QWindow::focusObjectChanged(QObject*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1dd693) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #10 0x76af2cfc7443 in QWidget::setFocus(Qt::FocusReason) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1c7443) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #11 0x76af2cf8be28 in QApplicationPrivate::giveFocusAccordingToFocusPolicy(QWidget*, QEvent*, QPoint) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18be28) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #12 0x76af2cf85c64 in QApplication::notify(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x185c64) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #13 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #14 0x76af2cf80d7d in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&, bool, bool) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x180d7d) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #15 0x76af2cfe2ad6  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e2ad6) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #16 0x76af2cfe3e74  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e3e74) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #17 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #18 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #19 0x76af2c796de6 in QGuiApplicationPrivate::processMouseEvent(QWindowSystemInterfacePrivate::MouseEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x196de6) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #20 0x76af2c7e15cb in QWindowSystemInterface::sendWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1e15cb) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #21 0x76af2cb152b3  (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x5152b3) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #22 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #23 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #24 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #25 0x76af2c3315ee in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x3315ee) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #26 0x76af2c1429a2 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1429a2) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #27 0x76af2c13b35d in QCoreApplication::exec() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x13b35d) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #28 0x5fa62cf67d94 in main /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/main.cpp:15
+    #29 0x76af2b82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+
+Direct leak of 672 byte(s) in 7 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd407 in wl_proxy_marshal_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa407) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af171a1139 in QtWaylandClient::QWaylandXdgActivationV1::requestXdgActivationToken(QtWaylandClient::QWaylandDisplay*, wl_surface*, unsigned int, QString const&) (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc139) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #5 0x76af171a13a5 in QtWaylandClient::QWaylandXdgSurface::requestActivate() (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc3a5) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #6 0x76af2c183d9a  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183d9a) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #7 0x76af2c79a983 in QGuiApplication::focusObjectChanged(QObject*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x19a983) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #8 0x76af2c798010 in QGuiApplicationPrivate::processActivatedEvent(QWindowSystemInterfacePrivate::ActivatedWindowEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x198010) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #9 0x76af2c7e15cb in QWindowSystemInterface::sendWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1e15cb) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #10 0x76af2c7e1787 in QWindowSystemInterface::flushWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1e1787) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #11 0x76af2c176682 in QObject::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x176682) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #12 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #13 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #14 0x76af2c138634 in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138634) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #15 0x76af2c333a8e  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x333a8e) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #16 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #17 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #18 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #19 0x76af2c3315ee in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x3315ee) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #20 0x76af2c1429a2 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1429a2) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #21 0x76af2c13b35d in QCoreApplication::exec() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x13b35d) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #22 0x5fa62cf67d94 in main /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/main.cpp:15
+    #23 0x76af2b82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #24 0x76af2b82a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #25 0x5fa62cf66944 in _start (/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/build-asan-game/src/game/game+0x16944) (BuildId: 053a6cf7273772ebac77129ea7c378ca82377068)
+
+Direct leak of 480 byte(s) in 5 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd407 in wl_proxy_marshal_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa407) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af171a1139 in QtWaylandClient::QWaylandXdgActivationV1::requestXdgActivationToken(QtWaylandClient::QWaylandDisplay*, wl_surface*, unsigned int, QString const&) (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc139) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #5 0x76af171a13a5 in QtWaylandClient::QWaylandXdgSurface::requestActivate() (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc3a5) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #6 0x76af2c183d9a  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183d9a) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #7 0x76af2c79a983 in QGuiApplication::focusObjectChanged(QObject*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x19a983) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #8 0x76af2c798010 in QGuiApplicationPrivate::processActivatedEvent(QWindowSystemInterfacePrivate::ActivatedWindowEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x198010) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #9 0x76af2c7e15cb in QWindowSystemInterface::sendWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1e15cb) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #10 0x76af2cb152b3  (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x5152b3) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #11 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #12 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #13 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #14 0x76af2c3315ee in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x3315ee) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #15 0x76af2c1429a2 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1429a2) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #16 0x76af2c13b35d in QCoreApplication::exec() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x13b35d) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #17 0x5fa62cf67d94 in main /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/main.cpp:15
+    #18 0x76af2b82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #19 0x76af2b82a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #20 0x5fa62cf66944 in _start (/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/build-asan-game/src/game/game+0x16944) (BuildId: 053a6cf7273772ebac77129ea7c378ca82377068)
+
+Direct leak of 192 byte(s) in 2 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd407 in wl_proxy_marshal_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa407) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af171a1139 in QtWaylandClient::QWaylandXdgActivationV1::requestXdgActivationToken(QtWaylandClient::QWaylandDisplay*, wl_surface*, unsigned int, QString const&) (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc139) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #5 0x76af171a13a5 in QtWaylandClient::QWaylandXdgSurface::requestActivate() (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc3a5) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #6 0x76af2c183d9a  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183d9a) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #7 0x76af2c79a983 in QGuiApplication::focusObjectChanged(QObject*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x19a983) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #8 0x76af2c18413e  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x18413e) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #9 0x76af2c7dd693 in QWindow::focusObjectChanged(QObject*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1dd693) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #10 0x76af2cfc7443 in QWidget::setFocus(Qt::FocusReason) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1c7443) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #11 0x76af2cf82f2e in QApplication::setActiveWindow(QWidget*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x182f2e) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #12 0x76af2cf83123 in QApplicationPrivate::notifyActiveWindowChange(QWindow*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x183123) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #13 0x76af2c797fea in QGuiApplicationPrivate::processActivatedEvent(QWindowSystemInterfacePrivate::ActivatedWindowEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x197fea) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #14 0x76af2c7e15cb in QWindowSystemInterface::sendWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1e15cb) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #15 0x76af2c7e1787 in QWindowSystemInterface::flushWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1e1787) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #16 0x76af2c176682 in QObject::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x176682) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #17 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #18 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #19 0x76af2c138634 in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138634) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #20 0x76af2c333a8e  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x333a8e) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #21 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #22 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #23 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #24 0x76af2c3315ee in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x3315ee) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #25 0x76af2c1429a2 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1429a2) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #26 0x76af2c13b35d in QCoreApplication::exec() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x13b35d) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #27 0x5fa62cf67d94 in main /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/main.cpp:15
+    #28 0x76af2b82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #29 0x76af2b82a28a in __libc_start_main_impl ../csu/libc-start.c:360
+
+Direct leak of 192 byte(s) in 2 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd407 in wl_proxy_marshal_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa407) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af171a1139 in QtWaylandClient::QWaylandXdgActivationV1::requestXdgActivationToken(QtWaylandClient::QWaylandDisplay*, wl_surface*, unsigned int, QString const&) (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc139) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #5 0x76af171a13a5 in QtWaylandClient::QWaylandXdgSurface::requestActivate() (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc3a5) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #6 0x76af2c183d9a  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183d9a) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #7 0x76af2c79a983 in QGuiApplication::focusObjectChanged(QObject*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x19a983) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #8 0x76af2c18413e  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x18413e) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #9 0x76af2c7dd693 in QWindow::focusObjectChanged(QObject*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1dd693) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #10 0x76af2cfc7443 in QWidget::setFocus(Qt::FocusReason) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1c7443) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #11 0x76af2cf82f2e in QApplication::setActiveWindow(QWidget*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x182f2e) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #12 0x76af2cf83123 in QApplicationPrivate::notifyActiveWindowChange(QWindow*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x183123) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #13 0x76af2c797fea in QGuiApplicationPrivate::processActivatedEvent(QWindowSystemInterfacePrivate::ActivatedWindowEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x197fea) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #14 0x76af2c7e15cb in QWindowSystemInterface::sendWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1e15cb) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #15 0x76af2cb152b3  (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x5152b3) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #16 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #17 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #18 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #19 0x76af2c3315ee in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x3315ee) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #20 0x76af2c1429a2 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1429a2) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #21 0x76af2c13b35d in QCoreApplication::exec() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x13b35d) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #22 0x5fa62cf67d94 in main /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/main.cpp:15
+    #23 0x76af2b82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #24 0x76af2b82a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #25 0x5fa62cf66944 in _start (/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/build-asan-game/src/game/game+0x16944) (BuildId: 053a6cf7273772ebac77129ea7c378ca82377068)
+
+Direct leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd407 in wl_proxy_marshal_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa407) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af2718d06b in QtWaylandClient::QWaylandDisplay::QWaylandDisplay(QtWaylandClient::QWaylandIntegration*) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x6c06b) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #5 0x76af271a96b8 in QtWaylandClient::QWaylandIntegration::QWaylandIntegration() (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x886b8) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #6 0x76af275ee531  (/usr/lib/x86_64-linux-gnu/qt6/plugins/platforms/libqwayland-generic.so+0x2531) (BuildId: d0965df69ace3c852f1b649b4c38e7137a9d8050)
+    #7 0x76af2c793141 in QGuiApplicationPrivate::createPlatformIntegration() (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x193141) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #8 0x76af2c79485f in QGuiApplicationPrivate::createEventDispatcher() (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x19485f) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #9 0x76af2c13c8b5 in QCoreApplicationPrivate::init() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x13c8b5) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #10 0x76af2c7948fe in QGuiApplicationPrivate::init() (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1948fe) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #11 0x76af2cf82984 in QApplicationPrivate::init() (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x182984) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #12 0x5fa62cf67d7d in main /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/main.cpp:7
+    #13 0x76af2b82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #14 0x76af2b82a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #15 0x5fa62cf66944 in _start (/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/build-asan-game/src/game/game+0x16944) (BuildId: 053a6cf7273772ebac77129ea7c378ca82377068)
+
+Direct leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd2ee in wl_proxy_marshal_constructor_versioned (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa2ee) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af271c278f in QtWayland::zwp_primary_selection_device_manager_v1::init(wl_registry*, unsigned int, int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0xa178f) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #5 0x76af27197242 in QtWaylandClient::QWaylandDisplay::registry_global(unsigned int, QString const&, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x76242) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #6 0x76af271be154 in QtWayland::wl_registry::handle_global(void*, wl_registry*, unsigned int, char const*, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x9d154) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #7 0x76af2a9b9b15  (/lib/x86_64-linux-gnu/libffi.so.8+0x7b15) (BuildId: c9149b6e99105aa4321ddd4a10ee4b90de7b7d49)
+
+Direct leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd2ee in wl_proxy_marshal_constructor_versioned (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa2ee) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af271bfbff in QtWayland::wl_compositor::init(wl_registry*, unsigned int, int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x9ebff) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #5 0x76af271966ec in QtWaylandClient::QWaylandDisplay::registry_global(unsigned int, QString const&, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x756ec) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #6 0x76af271be154 in QtWayland::wl_registry::handle_global(void*, wl_registry*, unsigned int, char const*, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x9d154) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #7 0x76af2a9b9b15  (/lib/x86_64-linux-gnu/libffi.so.8+0x7b15) (BuildId: c9149b6e99105aa4321ddd4a10ee4b90de7b7d49)
+
+Direct leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd2ee in wl_proxy_marshal_constructor_versioned (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa2ee) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af271c2fbf in QtWayland::zxdg_output_manager_v1::init(wl_registry*, unsigned int, int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0xa1fbf) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #5 0x76af271adba2 in QtWaylandClient::QWaylandXdgOutputManagerV1::QWaylandXdgOutputManagerV1(QtWaylandClient::QWaylandDisplay*, unsigned int, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x8cba2) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #6 0x76af27197610 in QtWaylandClient::QWaylandDisplay::registry_global(unsigned int, QString const&, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x76610) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #7 0x76af271be154 in QtWayland::wl_registry::handle_global(void*, wl_registry*, unsigned int, char const*, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x9d154) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #8 0x76af2a9b9b15  (/lib/x86_64-linux-gnu/libffi.so.8+0x7b15) (BuildId: c9149b6e99105aa4321ddd4a10ee4b90de7b7d49)
+
+Direct leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd2ee in wl_proxy_marshal_constructor_versioned (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa2ee) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af271c20bf in QtWayland::wl_output::init(wl_registry*, unsigned int, int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0xa10bf) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #5 0x76af271ae05e in QtWaylandClient::QWaylandScreen::QWaylandScreen(QtWaylandClient::QWaylandDisplay*, int, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x8d05e) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #6 0x76af27195e7f in QtWaylandClient::QWaylandDisplay::registry_global(unsigned int, QString const&, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x74e7f) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #7 0x76af271be154 in QtWayland::wl_registry::handle_global(void*, wl_registry*, unsigned int, char const*, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x9d154) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #8 0x76af2a9b9b15  (/lib/x86_64-linux-gnu/libffi.so.8+0x7b15) (BuildId: c9149b6e99105aa4321ddd4a10ee4b90de7b7d49)
+
+Direct leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd407 in wl_proxy_marshal_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa407) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af171a1139 in QtWaylandClient::QWaylandXdgActivationV1::requestXdgActivationToken(QtWaylandClient::QWaylandDisplay*, wl_surface*, unsigned int, QString const&) (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc139) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #5 0x76af171a13a5 in QtWaylandClient::QWaylandXdgSurface::requestActivate() (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc3a5) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #6 0x76af2c183d9a  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183d9a) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #7 0x76af2c79a983 in QGuiApplication::focusObjectChanged(QObject*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x19a983) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #8 0x76af2c18413e  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x18413e) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #9 0x76af2c7dd693 in QWindow::focusObjectChanged(QObject*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1dd693) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #10 0x76af2cfc7443 in QWidget::setFocus(Qt::FocusReason) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1c7443) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #11 0x76af2cf82f2e in QApplication::setActiveWindow(QWidget*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x182f2e) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #12 0x76af2cf83123 in QApplicationPrivate::notifyActiveWindowChange(QWindow*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x183123) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #13 0x76af2c797fea in QGuiApplicationPrivate::processActivatedEvent(QWindowSystemInterfacePrivate::ActivatedWindowEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x197fea) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #14 0x76af2c7e15cb in QWindowSystemInterface::sendWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1e15cb) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #15 0x76af2cb152b3  (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x5152b3) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #16 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #17 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #18 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #19 0x76af2c3315ee in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x3315ee) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #20 0x76af2c1429a2 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1429a2) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #21 0x76af2d1c0c4a in QDialog::exec() (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x3c0c4a) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #22 0x5fa62cf8945d in MainGame::remoteDiceMove(QString) /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/view/maingame.cpp:347
+    #23 0x5fa62cf8626d in MainGame::on_magicbtn_clicked() /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/view/maingame.cpp:236
+    #24 0x5fa62cfb28f4 in QtPrivate::FunctorCall<QtPrivate::IndexesList<>, QtPrivate::List<>, void, void (MainGame::*)()>::call(void (MainGame::*)(), MainGame*, void**) /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h:135
+    #25 0x5fa62cfb2073 in void QtPrivate::FunctionPointer<void (MainGame::*)()>::call<QtPrivate::List<>, void>(void (MainGame::*)(), MainGame*, void**) /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h:172
+    #26 0x5fa62cfb1e5b in QtPrivate::QSlotObject<void (MainGame::*)(), QtPrivate::List<>, void>::impl(int, QtPrivate::QSlotObjectBase*, QObject*, void**, bool*) /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h:383
+    #27 0x76af2c176682 in QObject::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x176682) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #28 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #29 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+
+Direct leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd2ee in wl_proxy_marshal_constructor_versioned (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa2ee) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af271c238f in QtWayland::wl_subcompositor::init(wl_registry*, unsigned int, int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0xa138f) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #5 0x76af27197094 in QtWaylandClient::QWaylandDisplay::registry_global(unsigned int, QString const&, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x76094) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #6 0x76af271be154 in QtWayland::wl_registry::handle_global(void*, wl_registry*, unsigned int, char const*, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x9d154) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #7 0x76af2a9b9b15  (/lib/x86_64-linux-gnu/libffi.so.8+0x7b15) (BuildId: c9149b6e99105aa4321ddd4a10ee4b90de7b7d49)
+
+Direct leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd2ee in wl_proxy_marshal_constructor_versioned (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa2ee) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af271c1a1f in QtWayland::wl_seat::init(wl_registry*, unsigned int, int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0xa0a1f) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #5 0x76af271a0b50 in QtWaylandClient::QWaylandInputDevice::QWaylandInputDevice(QtWaylandClient::QWaylandDisplay*, int, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x7fb50) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #6 0x76af271a9c19 in QtWaylandClient::QWaylandIntegration::createInputDevice(QtWaylandClient::QWaylandDisplay*, int, unsigned int) const (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x88c19) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #7 0x76af27196a76 in QtWaylandClient::QWaylandDisplay::registry_global(unsigned int, QString const&, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x75a76) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #8 0x76af271be154 in QtWayland::wl_registry::handle_global(void*, wl_registry*, unsigned int, char const*, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x9d154) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #9 0x76af2a9b9b15  (/lib/x86_64-linux-gnu/libffi.so.8+0x7b15) (BuildId: c9149b6e99105aa4321ddd4a10ee4b90de7b7d49)
+
+Direct leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd2ee in wl_proxy_marshal_constructor_versioned (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa2ee) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af271b7eaf in QtWayland::zwp_tablet_manager_v2::init(wl_registry*, unsigned int, int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x96eaf) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #5 0x76af271c4af5 in QtWaylandClient::QWaylandTabletManagerV2::QWaylandTabletManagerV2(QtWaylandClient::QWaylandDisplay*, unsigned int, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0xa3af5) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #6 0x76af27195ded in QtWaylandClient::QWaylandDisplay::registry_global(unsigned int, QString const&, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x74ded) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #7 0x76af271be154 in QtWayland::wl_registry::handle_global(void*, wl_registry*, unsigned int, char const*, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x9d154) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #8 0x76af2a9b9b15  (/lib/x86_64-linux-gnu/libffi.so.8+0x7b15) (BuildId: c9149b6e99105aa4321ddd4a10ee4b90de7b7d49)
+
+Direct leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd407 in wl_proxy_marshal_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa407) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af2719cd9f in QtWaylandClient::QWaylandInputDevice::seat_capabilities(unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x7bd9f) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #5 0x76af2a9b9b15  (/lib/x86_64-linux-gnu/libffi.so.8+0x7b15) (BuildId: c9149b6e99105aa4321ddd4a10ee4b90de7b7d49)
+
+Direct leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd2ee in wl_proxy_marshal_constructor_versioned (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa2ee) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af271c002f in QtWayland::wl_shm::init(wl_registry*, unsigned int, int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x9f02f) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #5 0x76af271ae6c6 in QtWaylandClient::QWaylandShm::QWaylandShm(QtWaylandClient::QWaylandDisplay*, int, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x8d6c6) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #6 0x76af27196bf6 in QtWaylandClient::QWaylandDisplay::registry_global(unsigned int, QString const&, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x75bf6) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #7 0x76af271be154 in QtWayland::wl_registry::handle_global(void*, wl_registry*, unsigned int, char const*, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x9d154) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #8 0x76af2a9b9b15  (/lib/x86_64-linux-gnu/libffi.so.8+0x7b15) (BuildId: c9149b6e99105aa4321ddd4a10ee4b90de7b7d49)
+
+Direct leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd2ee in wl_proxy_marshal_constructor_versioned (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa2ee) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af271b79bf in QtWayland::zwp_pointer_gestures_v1::init(wl_registry*, unsigned int, int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x969bf) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #5 0x76af271a8830 in QtWaylandClient::QWaylandPointerGestures::QWaylandPointerGestures(QtWaylandClient::QWaylandDisplay*, unsigned int, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x87830) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #6 0x76af271971ad in QtWaylandClient::QWaylandDisplay::registry_global(unsigned int, QString const&, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x761ad) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #7 0x76af271be154 in QtWayland::wl_registry::handle_global(void*, wl_registry*, unsigned int, char const*, unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x9d154) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #8 0x76af2a9b9b15  (/lib/x86_64-linux-gnu/libffi.so.8+0x7b15) (BuildId: c9149b6e99105aa4321ddd4a10ee4b90de7b7d49)
+
+Direct leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd407 in wl_proxy_marshal_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa407) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af2719cd20 in QtWaylandClient::QWaylandInputDevice::seat_capabilities(unsigned int) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0x7bd20) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #5 0x76af2a9b9b15  (/lib/x86_64-linux-gnu/libffi.so.8+0x7b15) (BuildId: c9149b6e99105aa4321ddd4a10ee4b90de7b7d49)
+
+Direct leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd407 in wl_proxy_marshal_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa407) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af171a1139 in QtWaylandClient::QWaylandXdgActivationV1::requestXdgActivationToken(QtWaylandClient::QWaylandDisplay*, wl_surface*, unsigned int, QString const&) (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc139) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #5 0x76af171a13a5 in QtWaylandClient::QWaylandXdgSurface::requestActivate() (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc3a5) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #6 0x76af2c183d9a  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183d9a) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #7 0x76af2c79a983 in QGuiApplication::focusObjectChanged(QObject*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x19a983) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #8 0x76af2c18413e  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x18413e) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #9 0x76af2c7dd693 in QWindow::focusObjectChanged(QObject*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1dd693) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #10 0x76af2cfc7443 in QWidget::setFocus(Qt::FocusReason) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1c7443) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #11 0x76af2cf8be28 in QApplicationPrivate::giveFocusAccordingToFocusPolicy(QWidget*, QEvent*, QPoint) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18be28) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #12 0x76af2cf85c64 in QApplication::notify(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x185c64) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #13 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #14 0x76af2cf80d7d in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&, bool, bool) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x180d7d) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #15 0x76af2cfe2ad6  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e2ad6) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #16 0x76af2cfe3e74  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e3e74) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #17 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #18 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #19 0x76af2c796de6 in QGuiApplicationPrivate::processMouseEvent(QWindowSystemInterfacePrivate::MouseEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x196de6) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #20 0x76af2c7e15cb in QWindowSystemInterface::sendWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1e15cb) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #21 0x76af2cb152b3  (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x5152b3) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #22 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #23 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #24 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #25 0x76af2c3315ee in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x3315ee) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #26 0x76af2c1429a2 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1429a2) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #27 0x76af2d1c0c4a in QDialog::exec() (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x3c0c4a) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #28 0x5fa62cf8945d in MainGame::remoteDiceMove(QString) /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/view/maingame.cpp:347
+    #29 0x5fa62cf8626d in MainGame::on_magicbtn_clicked() /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/view/maingame.cpp:236
+
+Direct leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd407 in wl_proxy_marshal_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa407) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af171a1139 in QtWaylandClient::QWaylandXdgActivationV1::requestXdgActivationToken(QtWaylandClient::QWaylandDisplay*, wl_surface*, unsigned int, QString const&) (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc139) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #5 0x76af171a13a5 in QtWaylandClient::QWaylandXdgSurface::requestActivate() (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc3a5) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #6 0x76af2c183d9a  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183d9a) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #7 0x76af2c79a983 in QGuiApplication::focusObjectChanged(QObject*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x19a983) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #8 0x76af2c18413e  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x18413e) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #9 0x76af2c7dd693 in QWindow::focusObjectChanged(QObject*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1dd693) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #10 0x76af2cfc7443 in QWidget::setFocus(Qt::FocusReason) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1c7443) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #11 0x76af2cfb5273 in QStackedLayout::setCurrentIndex(int) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1b5273) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #12 0x5fa62cf687a0 in MainWindow::on_createGameButton_clicked() /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/view/mainwindow.cpp:44
+    #13 0x5fa62cf6736b in MainWindow::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/build-asan-game/src/game/game_autogen/OTUN7GXZT4/moc_mainwindow.cpp:155
+    #14 0x5fa62cf675c5 in MainWindow::qt_metacall(QMetaObject::Call, int, void**) /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/build-asan-game/src/game/game_autogen/OTUN7GXZT4/moc_mainwindow.cpp:191
+    #15 0x76af2c183e70  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183e70) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #16 0x76af2d096cb3 in QAbstractButton::clicked(bool) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x296cb3) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #17 0x76af2d08e9ce  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x28e9ce) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #18 0x76af2d08eda1  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x28eda1) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #19 0x76af2d09c012 in QAbstractButton::mouseReleaseEvent(QMouseEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x29c012) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #20 0x76af2cfd484e in QWidget::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1d484e) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #21 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #22 0x76af2cf842c6 in QApplication::notify(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1842c6) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #23 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #24 0x76af2cf80d7d in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&, bool, bool) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x180d7d) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #25 0x76af2cfe2ad6  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e2ad6) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #26 0x76af2cfe3e74  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e3e74) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #27 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #28 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #29 0x76af2c796de6 in QGuiApplicationPrivate::processMouseEvent(QWindowSystemInterfacePrivate::MouseEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x196de6) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+
+Direct leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd407 in wl_proxy_marshal_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa407) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af171a1139 in QtWaylandClient::QWaylandXdgActivationV1::requestXdgActivationToken(QtWaylandClient::QWaylandDisplay*, wl_surface*, unsigned int, QString const&) (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc139) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #5 0x76af171a13a5 in QtWaylandClient::QWaylandXdgSurface::requestActivate() (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc3a5) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #6 0x76af2c183d9a  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183d9a) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #7 0x76af2c79a983 in QGuiApplication::focusObjectChanged(QObject*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x19a983) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #8 0x76af2c18413e  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x18413e) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #9 0x76af2c7dd693 in QWindow::focusObjectChanged(QObject*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1dd693) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #10 0x76af2cfc7443 in QWidget::setFocus(Qt::FocusReason) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1c7443) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #11 0x76af2cfb5273 in QStackedLayout::setCurrentIndex(int) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1b5273) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #12 0x5fa62cf685d9 in MainWindow::transitionToCodePage(QString) /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/view/mainwindow.cpp:34
+    #13 0x5fa62cfb42e0 in CreateGameResponseHandler::handleResponse(Response*) /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/client/handlers.cpp:42
+    #14 0x5fa62cf68afb in MainWindow::on_generateCodeButton_clicked() /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/view/mainwindow.cpp:78
+    #15 0x5fa62cf673e9 in MainWindow::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/build-asan-game/src/game/game_autogen/OTUN7GXZT4/moc_mainwindow.cpp:164
+    #16 0x5fa62cf675c5 in MainWindow::qt_metacall(QMetaObject::Call, int, void**) /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/build-asan-game/src/game/game_autogen/OTUN7GXZT4/moc_mainwindow.cpp:191
+    #17 0x76af2c183e70  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183e70) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #18 0x76af2d096cb3 in QAbstractButton::clicked(bool) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x296cb3) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #19 0x76af2d08e9ce  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x28e9ce) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #20 0x76af2d08eda1  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x28eda1) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #21 0x76af2d09c012 in QAbstractButton::mouseReleaseEvent(QMouseEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x29c012) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #22 0x76af2cfd484e in QWidget::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1d484e) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #23 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #24 0x76af2cf842c6 in QApplication::notify(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1842c6) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #25 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #26 0x76af2cf80d7d in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&, bool, bool) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x180d7d) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #27 0x76af2cfe2ad6  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e2ad6) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #28 0x76af2cfe3e74  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e3e74) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #29 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+
+Direct leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x76af275cc41c  (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x941c) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #2 0x76af275cc5d4 in wl_proxy_marshal_array_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0x95d4) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #3 0x76af275cd407 in wl_proxy_marshal_flags (/lib/x86_64-linux-gnu/libwayland-client.so.0+0xa407) (BuildId: 4c3fb152910da1137601f54df6b41e9fced9a75a)
+    #4 0x76af171a1139 in QtWaylandClient::QWaylandXdgActivationV1::requestXdgActivationToken(QtWaylandClient::QWaylandDisplay*, wl_surface*, unsigned int, QString const&) (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc139) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #5 0x76af171a13a5 in QtWaylandClient::QWaylandXdgSurface::requestActivate() (/usr/lib/x86_64-linux-gnu/qt6/plugins/wayland-shell-integration/libxdg-shell.so+0xc3a5) (BuildId: 34696de42b0b86da777e5f7dd857d55e6c20db66)
+    #6 0x76af2c183d9a  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183d9a) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #7 0x76af2c79a983 in QGuiApplication::focusObjectChanged(QObject*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x19a983) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #8 0x76af2c798010 in QGuiApplicationPrivate::processActivatedEvent(QWindowSystemInterfacePrivate::ActivatedWindowEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x198010) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #9 0x76af2c7e15cb in QWindowSystemInterface::sendWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1e15cb) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #10 0x76af2cb152b3  (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x5152b3) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #11 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #12 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #13 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #14 0x76af2c3315ee in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x3315ee) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #15 0x76af2c1429a2 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1429a2) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #16 0x76af2d1c0c4a in QDialog::exec() (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x3c0c4a) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #17 0x5fa62cf8945d in MainGame::remoteDiceMove(QString) /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/view/maingame.cpp:347
+    #18 0x5fa62cf8626d in MainGame::on_magicbtn_clicked() /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/view/maingame.cpp:236
+    #19 0x5fa62cfb28f4 in QtPrivate::FunctorCall<QtPrivate::IndexesList<>, QtPrivate::List<>, void, void (MainGame::*)()>::call(void (MainGame::*)(), MainGame*, void**) /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h:135
+    #20 0x5fa62cfb2073 in void QtPrivate::FunctionPointer<void (MainGame::*)()>::call<QtPrivate::List<>, void>(void (MainGame::*)(), MainGame*, void**) /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h:172
+    #21 0x5fa62cfb1e5b in QtPrivate::QSlotObject<void (MainGame::*)(), QtPrivate::List<>, void>::impl(int, QtPrivate::QSlotObjectBase*, QObject*, void**, bool*) /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h:383
+    #22 0x76af2c176682 in QObject::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x176682) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #23 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #24 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #25 0x76af2c138634 in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138634) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #26 0x76af2c333a8e  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x333a8e) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #27 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #28 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #29 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+
+Indirect leak of 144 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fe548 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:95
+    #1 0x76af2c16cf97 in QMimeData::QMimeData() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x16cf97) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #2 0x76af2c77e92c in QClipboard::setText(QString const&, QClipboard::Mode) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x17e92c) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #3 0x76af2d0f644a in QWidgetLineControl::copy(QClipboard::Mode) const (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f644a) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #4 0x76af2d1045ce in QWidgetLineControl::processKeyEvent(QKeyEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x3045ce) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #5 0x76af2d0f6eae in QLineEdit::keyPressEvent(QKeyEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f6eae) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #6 0x76af2cfd4509 in QWidget::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1d4509) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #7 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #8 0x76af2cf8459b in QApplication::notify(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18459b) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #9 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #10 0x76af2cfe3ea9  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e3ea9) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #11 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #12 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #13 0x76af2c797c5a in QGuiApplicationPrivate::processKeyEvent(QWindowSystemInterfacePrivate::KeyEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x197c5a) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #14 0x76af23fec8ef  (/usr/lib/x86_64-linux-gnu/qt6/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so+0x128ef) (BuildId: 85545758d81364dbf8731976fed570e9676b1071)
+    #15 0x76af2c183d9a  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183d9a) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #16 0x76af2bf073c0 in QDBusPendingCallWatcher::finished(QDBusPendingCallWatcher*) (/lib/x86_64-linux-gnu/libQt6DBus.so.6+0x763c0) (BuildId: be3940700eb915407d223d638e811a815f50efc6)
+    #17 0x76af2c176682 in QObject::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x176682) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #18 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #19 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #20 0x76af2c138634 in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138634) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #21 0x76af2c333a8e  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x333a8e) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #22 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #23 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #24 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #25 0x76af2c3315ee in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x3315ee) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #26 0x76af2c1429a2 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1429a2) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #27 0x76af2c13b35d in QCoreApplication::exec() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x13b35d) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #28 0x5fa62cf67d94 in main /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/main.cpp:15
+    #29 0x76af2b82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+
+Indirect leak of 144 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fe548 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:95
+    #1 0x76af2c16cf97 in QMimeData::QMimeData() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x16cf97) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #2 0x76af2c77e92c in QClipboard::setText(QString const&, QClipboard::Mode) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x17e92c) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #3 0x76af2d0f644a in QWidgetLineControl::copy(QClipboard::Mode) const (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f644a) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #4 0x76af2d1048d0 in QWidgetLineControl::processKeyEvent(QKeyEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x3048d0) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #5 0x76af2d0f6eae in QLineEdit::keyPressEvent(QKeyEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f6eae) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #6 0x76af2cfd4509 in QWidget::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1d4509) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #7 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #8 0x76af2cf8459b in QApplication::notify(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18459b) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #9 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #10 0x76af2cfe3ea9  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e3ea9) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #11 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #12 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #13 0x76af2c797c5a in QGuiApplicationPrivate::processKeyEvent(QWindowSystemInterfacePrivate::KeyEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x197c5a) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #14 0x76af23fec8ef  (/usr/lib/x86_64-linux-gnu/qt6/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so+0x128ef) (BuildId: 85545758d81364dbf8731976fed570e9676b1071)
+    #15 0x76af2c183d9a  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183d9a) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #16 0x76af2bf073c0 in QDBusPendingCallWatcher::finished(QDBusPendingCallWatcher*) (/lib/x86_64-linux-gnu/libQt6DBus.so.6+0x763c0) (BuildId: be3940700eb915407d223d638e811a815f50efc6)
+    #17 0x76af2c176682 in QObject::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x176682) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #18 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #19 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #20 0x76af2c138634 in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138634) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #21 0x76af2c333a8e  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x333a8e) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #22 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #23 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #24 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #25 0x76af2c3315ee in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x3315ee) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #26 0x76af2c1429a2 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1429a2) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #27 0x76af2c13b35d in QCoreApplication::exec() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x13b35d) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #28 0x5fa62cf67d94 in main /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/main.cpp:15
+    #29 0x76af2b82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+
+Indirect leak of 144 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fe548 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:95
+    #1 0x76af2c16cf97 in QMimeData::QMimeData() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x16cf97) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #2 0x76af2c77e92c in QClipboard::setText(QString const&, QClipboard::Mode) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x17e92c) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #3 0x76af2d0f644a in QWidgetLineControl::copy(QClipboard::Mode) const (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f644a) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #4 0x76af2d0fe259 in QLineEdit::mouseReleaseEvent(QMouseEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2fe259) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #5 0x76af2cfd484e in QWidget::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1d484e) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #6 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #7 0x76af2cf842c6 in QApplication::notify(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1842c6) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #8 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #9 0x76af2cf80d7d in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&, bool, bool) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x180d7d) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #10 0x76af2cfe2ad6  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e2ad6) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #11 0x76af2cfe3e74  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e3e74) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #12 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #13 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #14 0x76af2c796de6 in QGuiApplicationPrivate::processMouseEvent(QWindowSystemInterfacePrivate::MouseEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x196de6) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #15 0x76af2c7e15cb in QWindowSystemInterface::sendWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1e15cb) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #16 0x76af2cb152b3  (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x5152b3) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #17 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #18 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #19 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #20 0x76af2c3315ee in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x3315ee) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #21 0x76af2c1429a2 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1429a2) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #22 0x76af2c13b35d in QCoreApplication::exec() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x13b35d) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #23 0x5fa62cf67d94 in main /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/main.cpp:15
+    #24 0x76af2b82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #25 0x76af2b82a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #26 0x5fa62cf66944 in _start (/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/build-asan-game/src/game/game+0x16944) (BuildId: 053a6cf7273772ebac77129ea7c378ca82377068)
+
+Indirect leak of 112 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fe548 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:95
+    #1 0x76af2c1713e1  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1713e1) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #2 0x76af2c172025 in QMimeData::setData(QString const&, QByteArray const&) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x172025) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #3 0x76af271cd505 in QtWaylandClient::QWaylandClipboard::setMimeData(QMimeData*, QClipboard::Mode) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0xac505) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #4 0x76af2d0f644a in QWidgetLineControl::copy(QClipboard::Mode) const (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f644a) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #5 0x76af2d1048d0 in QWidgetLineControl::processKeyEvent(QKeyEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x3048d0) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #6 0x76af2d0f6eae in QLineEdit::keyPressEvent(QKeyEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f6eae) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #7 0x76af2cfd4509 in QWidget::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1d4509) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #8 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #9 0x76af2cf8459b in QApplication::notify(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18459b) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #10 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #11 0x76af2cfe3ea9  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e3ea9) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #12 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #13 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #14 0x76af2c797c5a in QGuiApplicationPrivate::processKeyEvent(QWindowSystemInterfacePrivate::KeyEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x197c5a) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #15 0x76af23fec8ef  (/usr/lib/x86_64-linux-gnu/qt6/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so+0x128ef) (BuildId: 85545758d81364dbf8731976fed570e9676b1071)
+    #16 0x76af2c183d9a  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183d9a) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #17 0x76af2bf073c0 in QDBusPendingCallWatcher::finished(QDBusPendingCallWatcher*) (/lib/x86_64-linux-gnu/libQt6DBus.so.6+0x763c0) (BuildId: be3940700eb915407d223d638e811a815f50efc6)
+    #18 0x76af2c176682 in QObject::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x176682) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #19 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #20 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #21 0x76af2c138634 in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138634) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #22 0x76af2c333a8e  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x333a8e) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #23 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #24 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #25 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #26 0x76af2c3315ee in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x3315ee) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #27 0x76af2c1429a2 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1429a2) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #28 0x76af2c13b35d in QCoreApplication::exec() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x13b35d) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #29 0x5fa62cf67d94 in main /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/main.cpp:15
+
+Indirect leak of 112 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fe548 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:95
+    #1 0x76af2c1713e1  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1713e1) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #2 0x76af2c172025 in QMimeData::setData(QString const&, QByteArray const&) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x172025) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #3 0x76af271cd505 in QtWaylandClient::QWaylandClipboard::setMimeData(QMimeData*, QClipboard::Mode) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0xac505) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #4 0x76af2d0f644a in QWidgetLineControl::copy(QClipboard::Mode) const (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f644a) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #5 0x76af2d0fe259 in QLineEdit::mouseReleaseEvent(QMouseEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2fe259) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #6 0x76af2cfd484e in QWidget::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1d484e) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #7 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #8 0x76af2cf842c6 in QApplication::notify(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1842c6) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #9 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #10 0x76af2cf80d7d in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&, bool, bool) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x180d7d) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #11 0x76af2cfe2ad6  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e2ad6) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #12 0x76af2cfe3e74  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e3e74) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #13 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #14 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #15 0x76af2c796de6 in QGuiApplicationPrivate::processMouseEvent(QWindowSystemInterfacePrivate::MouseEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x196de6) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #16 0x76af2c7e15cb in QWindowSystemInterface::sendWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1e15cb) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #17 0x76af2cb152b3  (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x5152b3) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #18 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #19 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #20 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #21 0x76af2c3315ee in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x3315ee) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #22 0x76af2c1429a2 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1429a2) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #23 0x76af2c13b35d in QCoreApplication::exec() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x13b35d) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #24 0x5fa62cf67d94 in main /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/main.cpp:15
+    #25 0x76af2b82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #26 0x76af2b82a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #27 0x5fa62cf66944 in _start (/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/build-asan-game/src/game/game+0x16944) (BuildId: 053a6cf7273772ebac77129ea7c378ca82377068)
+
+Indirect leak of 112 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fe548 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:95
+    #1 0x76af2c1713e1  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1713e1) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #2 0x76af2c172025 in QMimeData::setData(QString const&, QByteArray const&) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x172025) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #3 0x76af271cd505 in QtWaylandClient::QWaylandClipboard::setMimeData(QMimeData*, QClipboard::Mode) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0xac505) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #4 0x76af2d0f644a in QWidgetLineControl::copy(QClipboard::Mode) const (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f644a) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #5 0x76af2d1045ce in QWidgetLineControl::processKeyEvent(QKeyEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x3045ce) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #6 0x76af2d0f6eae in QLineEdit::keyPressEvent(QKeyEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f6eae) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #7 0x76af2cfd4509 in QWidget::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1d4509) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #8 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #9 0x76af2cf8459b in QApplication::notify(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18459b) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #10 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #11 0x76af2cfe3ea9  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e3ea9) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #12 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #13 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #14 0x76af2c797c5a in QGuiApplicationPrivate::processKeyEvent(QWindowSystemInterfacePrivate::KeyEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x197c5a) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #15 0x76af23fec8ef  (/usr/lib/x86_64-linux-gnu/qt6/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so+0x128ef) (BuildId: 85545758d81364dbf8731976fed570e9676b1071)
+    #16 0x76af2c183d9a  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183d9a) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #17 0x76af2bf073c0 in QDBusPendingCallWatcher::finished(QDBusPendingCallWatcher*) (/lib/x86_64-linux-gnu/libQt6DBus.so.6+0x763c0) (BuildId: be3940700eb915407d223d638e811a815f50efc6)
+    #18 0x76af2c176682 in QObject::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x176682) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #19 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #20 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #21 0x76af2c138634 in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138634) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #22 0x76af2c333a8e  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x333a8e) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #23 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #24 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #25 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #26 0x76af2c3315ee in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x3315ee) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #27 0x76af2c1429a2 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1429a2) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #28 0x76af2c13b35d in QCoreApplication::exec() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x13b35d) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #29 0x5fa62cf67d94 in main /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/main.cpp:15
+
+Indirect leak of 39 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x76af2c21c86c in QArrayData::allocate(QArrayData**, long long, long long, long long, QArrayData::AllocationOption) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x21c86c) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #2 0x76af2c1d29d3 in QByteArray::QByteArray(long long, Qt::Initialization) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1d29d3) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #3 0x76af2c207785 in QUtf8::convertFromUnicode(QStringView) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x207785) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #4 0x76af2c1f6620 in QString::toUtf8_helper(QString const&) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1f6620) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #5 0x76af2c172c19  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x172c19) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #6 0x76af2c1735ef in QMimeData::data(QString const&) const (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1735ef) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #7 0x76af271cd4f3 in QtWaylandClient::QWaylandClipboard::setMimeData(QMimeData*, QClipboard::Mode) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0xac4f3) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #8 0x76af2d0f644a in QWidgetLineControl::copy(QClipboard::Mode) const (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f644a) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #9 0x76af2d1045ce in QWidgetLineControl::processKeyEvent(QKeyEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x3045ce) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #10 0x76af2d0f6eae in QLineEdit::keyPressEvent(QKeyEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f6eae) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #11 0x76af2cfd4509 in QWidget::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1d4509) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #12 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #13 0x76af2cf8459b in QApplication::notify(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18459b) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #14 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #15 0x76af2cfe3ea9  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e3ea9) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #16 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #17 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #18 0x76af2c797c5a in QGuiApplicationPrivate::processKeyEvent(QWindowSystemInterfacePrivate::KeyEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x197c5a) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #19 0x76af23fec8ef  (/usr/lib/x86_64-linux-gnu/qt6/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so+0x128ef) (BuildId: 85545758d81364dbf8731976fed570e9676b1071)
+    #20 0x76af2c183d9a  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183d9a) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #21 0x76af2bf073c0 in QDBusPendingCallWatcher::finished(QDBusPendingCallWatcher*) (/lib/x86_64-linux-gnu/libQt6DBus.so.6+0x763c0) (BuildId: be3940700eb915407d223d638e811a815f50efc6)
+    #22 0x76af2c176682 in QObject::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x176682) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #23 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #24 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #25 0x76af2c138634 in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138634) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #26 0x76af2c333a8e  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x333a8e) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #27 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #28 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #29 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+
+Indirect leak of 39 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x76af2c21c86c in QArrayData::allocate(QArrayData**, long long, long long, long long, QArrayData::AllocationOption) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x21c86c) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #2 0x76af2c1d29d3 in QByteArray::QByteArray(long long, Qt::Initialization) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1d29d3) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #3 0x76af2c207785 in QUtf8::convertFromUnicode(QStringView) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x207785) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #4 0x76af2c1f6620 in QString::toUtf8_helper(QString const&) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1f6620) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #5 0x76af2c172c19  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x172c19) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #6 0x76af2c1735ef in QMimeData::data(QString const&) const (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1735ef) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #7 0x76af271cd4f3 in QtWaylandClient::QWaylandClipboard::setMimeData(QMimeData*, QClipboard::Mode) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0xac4f3) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #8 0x76af2d0f644a in QWidgetLineControl::copy(QClipboard::Mode) const (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f644a) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #9 0x76af2d1048d0 in QWidgetLineControl::processKeyEvent(QKeyEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x3048d0) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #10 0x76af2d0f6eae in QLineEdit::keyPressEvent(QKeyEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f6eae) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #11 0x76af2cfd4509 in QWidget::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1d4509) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #12 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #13 0x76af2cf8459b in QApplication::notify(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18459b) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #14 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #15 0x76af2cfe3ea9  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e3ea9) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #16 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #17 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #18 0x76af2c797c5a in QGuiApplicationPrivate::processKeyEvent(QWindowSystemInterfacePrivate::KeyEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x197c5a) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #19 0x76af23fec8ef  (/usr/lib/x86_64-linux-gnu/qt6/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so+0x128ef) (BuildId: 85545758d81364dbf8731976fed570e9676b1071)
+    #20 0x76af2c183d9a  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183d9a) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #21 0x76af2bf073c0 in QDBusPendingCallWatcher::finished(QDBusPendingCallWatcher*) (/lib/x86_64-linux-gnu/libQt6DBus.so.6+0x763c0) (BuildId: be3940700eb915407d223d638e811a815f50efc6)
+    #22 0x76af2c176682 in QObject::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x176682) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #23 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #24 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #25 0x76af2c138634 in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138634) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #26 0x76af2c333a8e  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x333a8e) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #27 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #28 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #29 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+
+Indirect leak of 39 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x76af2c21c86c in QArrayData::allocate(QArrayData**, long long, long long, long long, QArrayData::AllocationOption) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x21c86c) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #2 0x76af2c1d29d3 in QByteArray::QByteArray(long long, Qt::Initialization) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1d29d3) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #3 0x76af2c207785 in QUtf8::convertFromUnicode(QStringView) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x207785) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #4 0x76af2c1f6620 in QString::toUtf8_helper(QString const&) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1f6620) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #5 0x76af2c172c19  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x172c19) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #6 0x76af2c1735ef in QMimeData::data(QString const&) const (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1735ef) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #7 0x76af271cd4f3 in QtWaylandClient::QWaylandClipboard::setMimeData(QMimeData*, QClipboard::Mode) (/lib/x86_64-linux-gnu/libQt6WaylandClient.so.6+0xac4f3) (BuildId: a1004954d5cd39403c509a216c3b26b8cd0fa3f1)
+    #8 0x76af2d0f644a in QWidgetLineControl::copy(QClipboard::Mode) const (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f644a) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #9 0x76af2d0fe259 in QLineEdit::mouseReleaseEvent(QMouseEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2fe259) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #10 0x76af2cfd484e in QWidget::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1d484e) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #11 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #12 0x76af2cf842c6 in QApplication::notify(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1842c6) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #13 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #14 0x76af2cf80d7d in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&, bool, bool) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x180d7d) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #15 0x76af2cfe2ad6  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e2ad6) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #16 0x76af2cfe3e74  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e3e74) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #17 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #18 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #19 0x76af2c796de6 in QGuiApplicationPrivate::processMouseEvent(QWindowSystemInterfacePrivate::MouseEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x196de6) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #20 0x76af2c7e15cb in QWindowSystemInterface::sendWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1e15cb) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #21 0x76af2cb152b3  (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x5152b3) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #22 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #23 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #24 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #25 0x76af2c3315ee in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x3315ee) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #26 0x76af2c1429a2 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1429a2) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #27 0x76af2c13b35d in QCoreApplication::exec() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x13b35d) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #28 0x5fa62cf67d94 in main /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/main.cpp:15
+    #29 0x76af2b82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+
+Indirect leak of 16 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fe548 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:95
+    #1 0x76af2c77e921 in QClipboard::setText(QString const&, QClipboard::Mode) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x17e921) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #2 0x76af2d0f644a in QWidgetLineControl::copy(QClipboard::Mode) const (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f644a) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #3 0x76af2d1045ce in QWidgetLineControl::processKeyEvent(QKeyEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x3045ce) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #4 0x76af2d0f6eae in QLineEdit::keyPressEvent(QKeyEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f6eae) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #5 0x76af2cfd4509 in QWidget::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1d4509) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #6 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #7 0x76af2cf8459b in QApplication::notify(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18459b) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #8 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #9 0x76af2cfe3ea9  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e3ea9) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #10 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #11 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #12 0x76af2c797c5a in QGuiApplicationPrivate::processKeyEvent(QWindowSystemInterfacePrivate::KeyEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x197c5a) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #13 0x76af23fec8ef  (/usr/lib/x86_64-linux-gnu/qt6/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so+0x128ef) (BuildId: 85545758d81364dbf8731976fed570e9676b1071)
+    #14 0x76af2c183d9a  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183d9a) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #15 0x76af2bf073c0 in QDBusPendingCallWatcher::finished(QDBusPendingCallWatcher*) (/lib/x86_64-linux-gnu/libQt6DBus.so.6+0x763c0) (BuildId: be3940700eb915407d223d638e811a815f50efc6)
+    #16 0x76af2c176682 in QObject::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x176682) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #17 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #18 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #19 0x76af2c138634 in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138634) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #20 0x76af2c333a8e  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x333a8e) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #21 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #22 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #23 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #24 0x76af2c3315ee in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x3315ee) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #25 0x76af2c1429a2 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1429a2) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #26 0x76af2c13b35d in QCoreApplication::exec() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x13b35d) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #27 0x5fa62cf67d94 in main /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/main.cpp:15
+    #28 0x76af2b82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #29 0x76af2b82a28a in __libc_start_main_impl ../csu/libc-start.c:360
+
+Indirect leak of 16 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fe548 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:95
+    #1 0x76af2c77e921 in QClipboard::setText(QString const&, QClipboard::Mode) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x17e921) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #2 0x76af2d0f644a in QWidgetLineControl::copy(QClipboard::Mode) const (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f644a) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #3 0x76af2d1048d0 in QWidgetLineControl::processKeyEvent(QKeyEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x3048d0) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #4 0x76af2d0f6eae in QLineEdit::keyPressEvent(QKeyEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f6eae) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #5 0x76af2cfd4509 in QWidget::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1d4509) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #6 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #7 0x76af2cf8459b in QApplication::notify(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18459b) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #8 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #9 0x76af2cfe3ea9  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e3ea9) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #10 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #11 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #12 0x76af2c797c5a in QGuiApplicationPrivate::processKeyEvent(QWindowSystemInterfacePrivate::KeyEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x197c5a) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #13 0x76af23fec8ef  (/usr/lib/x86_64-linux-gnu/qt6/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so+0x128ef) (BuildId: 85545758d81364dbf8731976fed570e9676b1071)
+    #14 0x76af2c183d9a  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x183d9a) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #15 0x76af2bf073c0 in QDBusPendingCallWatcher::finished(QDBusPendingCallWatcher*) (/lib/x86_64-linux-gnu/libQt6DBus.so.6+0x763c0) (BuildId: be3940700eb915407d223d638e811a815f50efc6)
+    #16 0x76af2c176682 in QObject::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x176682) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #17 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #18 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #19 0x76af2c138634 in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138634) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #20 0x76af2c333a8e  (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x333a8e) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #21 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #22 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #23 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #24 0x76af2c3315ee in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x3315ee) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #25 0x76af2c1429a2 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1429a2) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #26 0x76af2c13b35d in QCoreApplication::exec() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x13b35d) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #27 0x5fa62cf67d94 in main /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/main.cpp:15
+    #28 0x76af2b82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #29 0x76af2b82a28a in __libc_start_main_impl ../csu/libc-start.c:360
+
+Indirect leak of 16 byte(s) in 1 object(s) allocated from:
+    #0 0x76af2d6fe548 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:95
+    #1 0x76af2c77e921 in QClipboard::setText(QString const&, QClipboard::Mode) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x17e921) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #2 0x76af2d0f644a in QWidgetLineControl::copy(QClipboard::Mode) const (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2f644a) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #3 0x76af2d0fe259 in QLineEdit::mouseReleaseEvent(QMouseEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x2fe259) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #4 0x76af2cfd484e in QWidget::event(QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1d484e) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #5 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #6 0x76af2cf842c6 in QApplication::notify(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1842c6) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #7 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #8 0x76af2cf80d7d in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&, bool, bool) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x180d7d) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #9 0x76af2cfe2ad6  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e2ad6) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #10 0x76af2cfe3e74  (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x1e3e74) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #11 0x76af2cf8b3af in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Widgets.so.6+0x18b3af) (BuildId: 812ea18a8b254d66471ad09ec189317aff0943e0)
+    #12 0x76af2c138447 in QCoreApplication::notifyInternal2(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x138447) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #13 0x76af2c796de6 in QGuiApplicationPrivate::processMouseEvent(QWindowSystemInterfacePrivate::MouseEvent*) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x196de6) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #14 0x76af2c7e15cb in QWindowSystemInterface::sendWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x1e15cb) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #15 0x76af2cb152b3  (/lib/x86_64-linux-gnu/libQt6Gui.so.6+0x5152b3) (BuildId: 500dda7095f45c8cd1ba0bf43fd4bb9448174ad5)
+    #16 0x76af2b714584  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d584) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #17 0x76af2b773976  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbc976) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #18 0x76af2b713a22 in g_main_context_iteration (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5ca22) (BuildId: 116e142b9b52c8a4dfd403e759e71ab8f95d8bb3)
+    #19 0x76af2c3315ee in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x3315ee) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #20 0x76af2c1429a2 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x1429a2) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #21 0x76af2c13b35d in QCoreApplication::exec() (/lib/x86_64-linux-gnu/libQt6Core.so.6+0x13b35d) (BuildId: 9b85b15d08445ceca32a75ffedf3453d8c6fab47)
+    #22 0x5fa62cf67d94 in main /home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/src/game/main.cpp:15
+    #23 0x76af2b82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #24 0x76af2b82a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #25 0x5fa62cf66944 in _start (/home/marija/Desktop/Verifikacija/2024_Analysis_ne-ljuti-se-covece/ne-ljuti-se-covece/build-asan-game/src/game/game+0x16944) (BuildId: 053a6cf7273772ebac77129ea7c378ca82377068)
+
+SUMMARY: AddressSanitizer: 6885 byte(s) leaked in 74 allocation(s).

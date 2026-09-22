@@ -111,14 +111,10 @@ This allows libFuzzer to collect coverage information from the tested code and A
 
 ## Corpus
 
-The initial corpus contains simple seed inputs, including a valid-looking JSON message and an invalid text input.
+The current `corpus/` directory includes these two simple seed files:
 
-Example:
-
-```text
-{"type":"CreateGameMessage","numberOfPlayers":4}
-abc
-```
+- [`valid.json`](corpus/valid.json): `{"type":"CreateGameMessage","numberOfPlayers":4}` followed by a newline.
+- [`invalid.txt`](corpus/invalid.txt): `abc` followed by a newline. The seed is stored as `invalid.txt`, not as a file named `abc`.
 
 Sixteen named JSON seeds were subsequently added in the same `corpus/`
 directory, providing a seed for each of the 17 recognized message types.

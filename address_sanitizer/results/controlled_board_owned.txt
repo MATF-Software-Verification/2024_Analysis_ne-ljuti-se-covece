@@ -1,0 +1,8 @@
+QT_QPA_PLATFORM=offscreen ASAN_OPTIONS=detect_leaks=1
+Command: /tmp/asan-controlled-sgfxeym0/build-qt6/src/test/test ['BoardTest', '-c', 'BoardTest: Validacija izlazenje  piuna iz kucice']
+Filters: BoardTest
+===============================================================================
+All tests passed (6 assertions in 1 test case)
+
+
+PROCESS_RETURN_CODE=0

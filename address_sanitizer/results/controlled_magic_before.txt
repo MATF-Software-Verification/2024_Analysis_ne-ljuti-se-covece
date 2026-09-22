@@ -1,0 +1,45 @@
+QT_QPA_PLATFORM=offscreen ASAN_OPTIONS=detect_leaks=1
+Command: /tmp/asan-controlled-sgfxeym0/build-qt6/src/test/test ['ActivateMagicMessageHandlerTest']
+Server started! Listening...
+Filters: ActivateMagicMessageHandlerTest
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test is a Catch v2.13.7 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+ActivateMagicMessageHandlerTest
+  ActivateMagicMessageHandlerTest: Valid ActivateMagicMessage Handling
+-------------------------------------------------------------------------------
+/tmp/asan-controlled-sgfxeym0/source/src/test/server/handlers/ActivateMagicMessageHandlerTest.cpp:11
+...............................................................................
+
+/tmp/asan-controlled-sgfxeym0/source/src/test/server/handlers/ActivateMagicMessageHandlerTest.cpp:26: FAILED:
+  REQUIRE( moveResponse->getErrorMessage() == "" )
+with expansion:
+  { {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?},
+  {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?},
+  {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?}, {?},
+  {?}, {?} }
+  ==
+  ""
+
+ASSERT failure in QList::at: "index out of range", file /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h, line 423
+-------------------------------------------------------------------------------
+ActivateMagicMessageHandlerTest
+  ActivateMagicMessageHandlerTest: Invalid ActivateMagicMessage Handling, no
+                                   magic
+-------------------------------------------------------------------------------
+/tmp/asan-controlled-sgfxeym0/source/src/test/server/handlers/ActivateMagicMessageHandlerTest.cpp:47
+...............................................................................
+
+/tmp/asan-controlled-sgfxeym0/source/src/test/server/handlers/ActivateMagicMessageHandlerTest.cpp:47: FAILED:
+due to a fatal error condition:
+  SIGABRT - Abort (abnormal termination) signal
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 6 | 4 passed | 2 failed
+
+
+PROCESS_RETURN_CODE=-6
