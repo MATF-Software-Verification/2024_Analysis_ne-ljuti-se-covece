@@ -49,6 +49,15 @@ sudo apt install clang pkg-config
 The fuzz target converts the byte buffer supplied by libFuzzer into a `QByteArray` and passes it to `MessageFactory::createMessage()`.
 
 ```cpp
+#include <cstddef>
+#include <cstdint>
+#include <stdexcept>
+#include <memory>
+
+#include <QByteArray>
+
+#include "messagefactory.h"
+
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t* data, size_t size)
 {
     QByteArray input(
@@ -56,21 +65,32 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t* data, size_t size)
         static_cast<qsizetype>(size)
     );
 
+    std::unique_ptr<Message> message;
     try
     {
-        Message* message = MessageFactory::createMessage(input);
-        delete message;
+        message.reset(MessageFactory::createMessage(input));
     }
     catch (const std::runtime_error&)
     {
-        // Invalid or unknown message types are expected fuzz inputs.
+        // Rejecting arbitrary input is expected; continue with the next input.
+        return 0;
     }
+
+    // Failure to parse our own serialized message must not be swallowed.
+    const QByteArray serialized = message->prepareMessage();
+    std::unique_ptr<Message> reparsed(MessageFactory::createMessage(serialized));
 
     return 0;
 }
 ```
 
-The `std::runtime_error` exception is caught because invalid or unknown message types are expected during fuzzing and should not be treated as crashes.
+The original harness only parsed and deleted a message. The current harness also
+serializes it with `prepareMessage()` and parses that output again. Only the
+first parse catches `std::runtime_error`: rejection of arbitrary input is
+expected. Serialization and second-parse exceptions are left visible to the
+fuzzer. `std::unique_ptr` provides automatic ownership for both messages.
+No equality with the original input is required: extra fields may be ignored
+and values normalized. This checks reparsability, not semantic equivalence.
 
 ## Instrumented build
 
@@ -100,14 +120,20 @@ Example:
 abc
 ```
 
-libFuzzer then mutates the corpus automatically and keeps inputs that discover new execution paths.
+Sixteen named JSON seeds were subsequently added in the same `corpus/`
+directory, providing a seed for each of the 17 recognized message types.
+The existing seeds were preserved. libFuzzer also adds generated corpus entries.
+The expanded-corpus completed run reused mutations from an earlier attempt
+whose final LeakSanitizer check failed because of the sandbox environment;
+that attempt's log and empty crash artifact were removed. The corpus is thus
+evolved, not a frozen set of only the 17 hand-written seeds.
 
 ## Running the analysis
 
 From the `libfuzzer` directory run:
 
 ```bash
-./run_libfuzzer.sh
+./run_libfuzzer.sh results/libfuzzer_new.txt
 ```
 
 The script:
@@ -120,20 +146,27 @@ The script:
 6. Stores the complete output in:
 
 ```text
-results/libfuzzer.txt
+results/libfuzzer_new.txt
 ```
+
+The optional argument selects the report path and refuses to overwrite it.
+Without an argument, the script retains its historical behavior and overwrites
+`results/libfuzzer.txt`; use a new filename to preserve archived results.
 
 ## Results
 
-The final run completed without a crash or AddressSanitizer error.
+The original archived run (`results/libfuzzer.txt`, parse/delete harness)
+completed without a reported crash or AddressSanitizer error. The figures below
+are taken from that saved log; earlier README figures referred to a different
+execution and have been corrected. Historical screenshots are retained.
 
 ```text
-DONE   cov: 99 ft: 148 corp: 4/83b lim: 4096 exec/s: 15755 rss: 461Mb
-Done 488435 runs in 31 second(s)
+DONE   cov: 99 ft: 148 corp: 4/83b lim: 4096 exec/s: 15805 rss: 461Mb
+Done 489974 runs in 31 second(s)
 
-stat::number_of_executed_units: 488435
-stat::average_exec_per_sec:     15755
-stat::new_units_added:          4
+stat::number_of_executed_units: 489974
+stat::average_exec_per_sec:     15805
+stat::new_units_added:          0
 stat::slowest_unit_time_sec:    0
 stat::peak_rss_mb:              461
 ```
@@ -147,6 +180,33 @@ Nije uspesno kreirana poruka: ...
 This output is expected because `MessageFactory::createMessage()` explicitly rejects unknown or malformed message types.
 
 No crash, buffer overflow, use-after-free or other AddressSanitizer failure was observed during this 30-second run.
+
+### Comparison of saved experiments
+
+| Saved report in `results/` | Harness and corpus | Executions | Seconds | cov | ft |
+|---|---|---:|---:|---:|---:|
+| `libfuzzer.txt` | Original parse/delete, original corpus | 489,974 | 31 | 99 | 148 |
+| `libfuzzer_expanded_verified.txt.gz` | Same parse/delete, expanded and evolved corpus | 851,054 | 31 | 199 | 353 |
+| `libfuzzer_roundtrip.txt.gz` | Parse/serialize/reparse, expanded and evolved corpus | 758,953 | 31 | 343 | 560 |
+
+The two supplementary runs completed with exit status 0 and no reported
+AddressSanitizer/LeakSanitizer error. The round-trip run reported 24,482
+executions/s, 12 new units and peak RSS 465 MB. It used the existing script with
+`./run_libfuzzer.sh results/libfuzzer_roundtrip.txt`, outside the sandbox so
+LeakSanitizer could perform its final check. Historical logs were preserved.
+The two supplementary logs are archived as lossless `.txt.gz` files to fit
+repository file-size limits. The command above originally produced plain text;
+compression was performed afterward. Read the archived reports with
+`gzip -cd <report.txt.gz> | less`.
+
+The corpus continued evolving between runs; these are not controlled throughput
+benchmarks. `cov` and `ft` are internal counters, not percentages or proof that
+all branches of all 17 constructors were executed. The round-trip harness adds
+operations and instrumentation, so its counters are not directly comparable as
+a percentage improvement over the original harness. No failure to reparse a
+serialized message was observed in this execution window. This does not prove
+semantic equivalence, valid game state, or absence of uninitialized-value use:
+the enabled AddressSanitizer is not a general uninitialized-read detector.
 
 ## Interpretation
 
@@ -170,7 +230,9 @@ libfuzzer/
 ├── fuzz_messagefactory.cpp
 ├── corpus/
 ├── results/
-│   └── libfuzzer.txt
+│   ├── libfuzzer.txt
+│   ├── libfuzzer_expanded_verified.txt.gz
+│   └── libfuzzer_roundtrip.txt.gz
 └── pictures/
     ├── run_libfuzzer.png
     ├── fuzz_inputs.png
@@ -181,6 +243,9 @@ libfuzzer/
 
 libFuzzer successfully exercised `MessageFactory::createMessage()` with hundreds of thousands of generated inputs.
 
-In the final 31-second run, 488435 inputs were executed at an average rate of 15755 executions per second.
+In the original archived 31-second run, 489974 inputs were executed at an average rate of 15805 executions per second.
 
-No crash or AddressSanitizer-detected memory error was found during this run. The parser handled malformed input by rejecting it and throwing the expected `std::runtime_error`, which the fuzz harness catches intentionally.
+No crash or AddressSanitizer-detected memory error was found during this run. Unknown message types and malformed JSON are rejected with the expected
+`std::runtime_error`. Recognized types with missing or invalid fields may still
+be accepted; for example, `CreateGameMessage` does not explicitly validate
+`numberOfPlayers`. The harness does not test game rules or server handlers.

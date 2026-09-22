@@ -1,0 +1,10 @@
+{
+  "type": "MovePawnResponse",
+  "color": 0,
+  "eatenColor": 4,
+  "newField": "f40",
+  "eatenPawnNewField": "",
+  "oldField": "blue1",
+  "success": true,
+  "errorMessage": ""
+}

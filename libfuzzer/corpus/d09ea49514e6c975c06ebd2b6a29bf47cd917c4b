@@ -1,0 +1,4 @@
+{
+  "type": "JoinGameMessage",
+  "gameCode": "ABG"
+}

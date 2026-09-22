@@ -1,0 +1,7 @@
+{
+  "type": "CreateGameResponse",
+  "gameCode": "ABCDEFG",
+  "color": 0,
+  "errorMessage": "",
+  "success": true
+}

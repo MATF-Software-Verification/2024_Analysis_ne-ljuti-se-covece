@@ -1,0 +1,6 @@
+{
+  "type": "JoinGameResponse",
+  "joicolor": 3,
+  "errorMessage": "",
+  "success": true
+}

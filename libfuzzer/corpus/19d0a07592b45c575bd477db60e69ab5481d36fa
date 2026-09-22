@@ -1,0 +1,6 @@
+{
+  "type": "MovePawnResponse",
+   "eatenColor": 4,
+  "newField": "f40",
+  "ea": ""
+}

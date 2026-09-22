@@ -1,0 +1,5 @@
+{
+  "type": "CreateGameResponse",
+  "gameCode": "ABCD",
+  "orucess": true
+}

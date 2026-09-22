@@ -334,7 +334,7 @@ The analysis can be reproduced using:
 
 ```bash
 cd libfuzzer
-./run_libfuzzer.sh
+./run_libfuzzer.sh results/libfuzzer_new.txt
 ```
 
 ### Fuzz target
@@ -349,8 +349,12 @@ For every generated input, it:
 
 1. converts the byte buffer into `QByteArray`,
 2. calls `MessageFactory::createMessage()`,
-3. deletes a successfully created message,
-4. catches the expected `std::runtime_error` for malformed or unknown message types.
+3. serializes an accepted message with `prepareMessage()` and parses it again,
+4. manages both messages with `std::unique_ptr`.
+
+Only the initial parse catches the expected `std::runtime_error`. Exceptions
+during serialization or reparsing are not swallowed. The original harness
+only parsed and deleted a message; its recorded results remain separate.
 
 Invalid message types are expected fuzz inputs and are therefore not treated as crashes.
 
@@ -376,6 +380,33 @@ This enables libFuzzer coverage-guided mutation together with AddressSanitizer c
 The fuzzing run executed hundreds of thousands of inputs without reporting a crash or an AddressSanitizer error.
 
 The `cov` value printed by libFuzzer is an internal coverage counter and should not be interpreted as a percentage of line coverage.
+
+### Comparison of saved experiments
+
+| Saved report in `libfuzzer/results/` | Harness and corpus | Executions | Seconds | cov | ft |
+|---|---|---:|---:|---:|---:|
+| `libfuzzer.txt` | Original parse/delete, original corpus | 489,974 | 31 | 99 | 148 |
+| `libfuzzer_expanded_verified.txt.gz` | Same parse/delete, expanded and evolved corpus | 851,054 | 31 | 199 | 353 |
+| `libfuzzer_roundtrip.txt.gz` | Parse/serialize/reparse, expanded and evolved corpus | 758,953 | 31 | 343 | 560 |
+
+The two supplementary runs completed with exit status 0 and no reported
+AddressSanitizer/LeakSanitizer error. The round-trip run reported 24,482
+executions/s, 12 new units and peak RSS 465 MB. It used the existing script with
+`./run_libfuzzer.sh results/libfuzzer_roundtrip.txt`, outside the sandbox so
+LeakSanitizer could perform its final check. Historical logs were preserved.
+The two supplementary logs are archived as lossless `.txt.gz` files to fit
+repository file-size limits. The command above originally produced plain text;
+compression was performed afterward. Read the archived reports with
+`gzip -cd <report.txt.gz> | less`.
+
+The corpus continued evolving between runs; these are not controlled throughput
+benchmarks. `cov` and `ft` are internal counters, not percentages or proof that
+all branches of all 17 constructors were executed. The round-trip harness adds
+operations and instrumentation, so its counters are not directly comparable as
+a percentage improvement over the original harness. No failure to reparse a
+serialized message was observed in this execution window. This does not prove
+semantic equivalence, valid game state, or absence of uninitialized-value use:
+the enabled AddressSanitizer is not a general uninitialized-read detector.
 
 ### Conclusion
 

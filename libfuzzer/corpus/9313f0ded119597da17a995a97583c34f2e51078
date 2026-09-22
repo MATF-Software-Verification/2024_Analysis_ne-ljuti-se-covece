@@ -1,0 +1,6 @@
+{
+  "type": "ActivateMagicResponse",
+  "color": 0,
+  "remainingMagiorMessage": "",
+  "broadcast": true
+}

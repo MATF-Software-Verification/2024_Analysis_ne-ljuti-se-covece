@@ -1,0 +1,5 @@
+{
+  "type": "PlayerReadyResponse",
+  "color": 0,
+  "eatss": true
+}

@@ -1,0 +1,5 @@
+{
+  "type": "MovePawnMessage",
+  "field": "blue1",
+  "pawnColor": 0
+}

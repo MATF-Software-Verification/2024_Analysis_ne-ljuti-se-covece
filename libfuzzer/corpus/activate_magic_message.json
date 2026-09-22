@@ -1,0 +1,5 @@
+{
+  "type": "ActivateMagicMessage",
+  "fieldMagic": "remote_dice",
+  "remoteDice": 6
+}

@@ -1,0 +1,6 @@
+{
+  "type": "EndTurnResponse",
+  "color": 3,
+  "errorMessage": "",
+  "success": true
+}

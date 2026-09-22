@@ -1,6 +1,7 @@
 #include <cstddef>
 #include <cstdint>
 #include <stdexcept>
+#include <memory>
 
 #include <QByteArray>
 
@@ -13,15 +14,20 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t* data, size_t size)
         static_cast<qsizetype>(size)
     );
 
+    std::unique_ptr<Message> message;
     try
     {
-        Message* message = MessageFactory::createMessage(input);
-        delete message;
+        message.reset(MessageFactory::createMessage(input));
     }
     catch (const std::runtime_error&)
     {
-        // Invalid or unknown message types are expected fuzz inputs.
+        // Rejecting arbitrary input is expected; continue with the next input.
+        return 0;
     }
+
+    // Failure to parse our own serialized message must not be swallowed.
+    const QByteArray serialized = message->prepareMessage();
+    std::unique_ptr<Message> reparsed(MessageFactory::createMessage(serialized));
 
     return 0;
 }

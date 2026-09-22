@@ -1,0 +1,5 @@
+{
+  "type": "ActivateMagicMessage",
+  "fieldic": "ree",
+  "remoteDice": 6
+}

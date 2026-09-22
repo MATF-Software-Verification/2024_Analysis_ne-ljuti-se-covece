@@ -1,0 +1,4 @@
+{
+  "type": "CreateGameResponse", "gameCode": "ABCD",
+  "ss": true
+}

@@ -1,0 +1,6 @@
+{
+  "type": "MovePawnResponse",
+  "color": 0,
+  "eatenCoucess": true,
+  "errorMessage": ""
+}

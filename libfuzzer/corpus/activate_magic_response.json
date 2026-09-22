@@ -1,0 +1,10 @@
+{
+  "type": "ActivateMagicResponse",
+  "color": 0,
+  "remainingMagicNumber": 2,
+  "fieldName": "remote_dice",
+  "newDiceNumber": 6,
+  "success": true,
+  "errorMessage": "",
+  "broadcast": true
+}

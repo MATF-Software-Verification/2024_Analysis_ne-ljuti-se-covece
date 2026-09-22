@@ -1,0 +1,6 @@
+{
+  "type": "CreateGameResponse",
+  "gameCode": "ABCDEFG",
+  "orMessage": "",
+  "success": true
+}

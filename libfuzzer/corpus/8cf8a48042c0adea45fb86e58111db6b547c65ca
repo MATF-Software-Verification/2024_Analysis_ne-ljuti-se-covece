@@ -1,0 +1,6 @@
+{
+  "type": "StartGameResponse",
+  "color": 0,
+  "errorMessage": "",
+  "ress": true
+}

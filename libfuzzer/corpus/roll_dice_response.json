@@ -1,0 +1,7 @@
+{
+  "type": "RollDiceResponse",
+  "number": 6,
+  "color": 0,
+  "errorMessage": "",
+  "success": true
+}

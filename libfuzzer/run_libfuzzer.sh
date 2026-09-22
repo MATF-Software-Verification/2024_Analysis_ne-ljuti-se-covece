@@ -4,7 +4,12 @@ set -e
 
 PROJECT_DIR="../ne-ljuti-se-covece"
 BUILD_DIR="$PROJECT_DIR/build-fuzz"
-RESULT_FILE="results/libfuzzer.txt"
+RESULT_FILE="${1:-results/libfuzzer.txt}"
+
+if [[ $# -gt 0 && -e "$RESULT_FILE" ]]; then
+  echo "Result file already exists: $RESULT_FILE" >&2
+  exit 1
+fi
 
 rm -rf "$BUILD_DIR"
 
